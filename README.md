@@ -1,2 +1,3 @@
-# Statistics-blog
-Blog for Statistics' homework
+# Statistics blog
+
+##Leonardo Cataldi's blog for Statistics' homework
