@@ -11,8 +11,8 @@ Statistics can  be divided in 2 major branches:
 The first branch is related to collecting data and showing them in a way that makes them understandable from the general public. The second branch is, instead, used to infer the properties of a population testing hypotesis on a random sample of that population.
 
 
-**References**
-[1] [https://www.britannica.com/science/statistics](https://www.britannica.com/science/statistics)
-[2] [https://en.wikipedia.org/wiki/Statistics](https://en.wikipedia.org/wiki/Statistics)
-[3] [https://it.wikipedia.org/wiki/Statistica](https://it.wikipedia.org/wiki/Statistica)
-[4] [https://en.wikipedia.org/wiki/Statistical_inference](https://en.wikipedia.org/wiki/Statistical_inference)
+**References** \
+[1] [https://www.britannica.com/science/statistics](https://www.britannica.com/science/statistics) \
+[2] [https://en.wikipedia.org/wiki/Statistics](https://en.wikipedia.org/wiki/Statistics) \
+[3] [https://it.wikipedia.org/wiki/Statistica](https://it.wikipedia.org/wiki/Statistica) \
+[4] [https://en.wikipedia.org/wiki/Statistical_inference](https://en.wikipedia.org/wiki/Statistical_inference) \
