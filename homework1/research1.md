@@ -15,4 +15,4 @@ The first branch is related to collecting data and showing them in a way that ma
 [1] [https://www.britannica.com/science/statistics](https://www.britannica.com/science/statistics) \
 [2] [https://en.wikipedia.org/wiki/Statistics](https://en.wikipedia.org/wiki/Statistics) \
 [3] [https://it.wikipedia.org/wiki/Statistica](https://it.wikipedia.org/wiki/Statistica) \
-[4] [https://en.wikipedia.org/wiki/Statistical_inference](https://en.wikipedia.org/wiki/Statistical_inference) \
+[4] [https://en.wikipedia.org/wiki/Statistical_inference](https://en.wikipedia.org/wiki/Statistical_inference)
