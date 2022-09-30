@@ -8,7 +8,7 @@ Statistics can  be divided in 2 major branches:
 
  - Inferential Statistics
 
-The first branch is related to collect data and show them in a way that makes them understandable from the general public. The second branch is, instead, used to infer the properties of a population testing hypotesis on a random sample of that population.
+The first branch is related to collecting data and showing them in a way that makes them understandable from the general public. The second branch is, instead, used to infer the properties of a population testing hypotesis on a random sample of that population.
 
 
 **References**
