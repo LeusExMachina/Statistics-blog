@@ -80,7 +80,7 @@ A very important difference between C# and VB.NET is that, deriving from C, the 
 
 ### Other generic syntax differences
 
-In general, although running on the same framework, C# and VB.NET have a very different syntax. The first has a syntax that comes from C and Java, while the second tends to have a more verbose sintax, more similar to the natural language.
+In general, although running on the same framework, C# and VB.NET have a very different syntax. The first has a syntax that comes from C and Java, while the second tends to have a more verbose syntax, more similar to the natural language.
 
 **References** \
 [1] [https://www.grectech.it/blog/meglio-il-visual-basic-net-o-il-visual-c/#:~:text=Che%20VB.NET%20%C3%A8%20la,altri%20ambienti%2C%20come%20il%20MonoDevelop.](https://www.grectech.it/blog/meglio-il-visual-basic-net-o-il-visual-c/#:~:text=Che%20VB.NET%20%C3%A8%20la,altri%20ambienti%2C%20come%20il%20MonoDevelop.) \
