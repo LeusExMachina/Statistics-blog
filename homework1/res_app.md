@@ -18,7 +18,7 @@ are different variables if declared in C#, but instead are considered the same i
 
 ### Event Handling
 
-Although the event handling happens in a similar way both in C# and in VB.NET, the syntax used by the two languages is totally different. In VB.NET, we can directly declare a sub as an Handler of some event, with the following syntax:
+Although the event handling happens in a similar way both in C# and in VB.NET, the syntax used by the two languages is totally different. In VB.NET, we can directly declare a sub as a handler of some event, with the following syntax:
 
 ```VB
 Private Sub Button_Click(sender As Object, e As EventArgs) Handles MyButton.Click
@@ -78,7 +78,7 @@ Notice then how in C# arrays are addressed with "[]", while in VB they are addre
 
 A very important difference between C# and VB.NET is that, deriving from C, the first allows the programmer to handle explicit pointers. The same is not permitted by VB.NET
 
-### Other generic symtax differences
+### Other generic syntax differences
 
 In general, although running on the same framework, VB.NET and C# have a very different syntax. The first has a syntax that comes from C and Java, while the second tends to have a more verbose sintax, more similar to the natural language.
 
