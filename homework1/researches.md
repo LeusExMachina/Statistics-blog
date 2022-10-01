@@ -1,4 +1,4 @@
-# Question 1 - What is Statistics?
+# Research 1 - What is Statistics?
 
 The word "Statistics" comes from german "statistik", meaning "description of a state". In fact, Statistics can be defined as the science of collecting, analizing, and interpreting data in order to obtain knowledge about a certain topic and take decisions based on that knowledge: since the origin of the term, related to the decisions taken to wisely regulate a nation. Statistics is mainly related to data: as a science, it provides those instruments that are necessary to summarize a large amount of unorganized information and extract from them that knowledge necessary to achieve the most various purposes. Statistics is also used by the major part of oter sciences, since it is an instrument of the scientific method: Statistics is used to prove theories true or false, as for validating the effectiveness of a medicine, ecc...
 
@@ -34,7 +34,7 @@ Therefore, after choosing the set to observe, the attributes of the units to rep
 
 We can notice how the structure of the Dataset is divided in rows and columns. The first column regards all the statistical units of the set, while the other columns regard the attributes that we chose to represent in the Dataset. For each statistical unit, then, we have a row: for each attribute the dataset contains the valued assumed by it for that specific unit. A Dataset can then be defined as a structured set of data.
 
-Thanks to this formal structure, there are various ways to memorize and elaborate a Dataset: a simple way to memorize a Dataset could be an Excel sheet, but there are also more complex systems, called DBMS (DataBase Management Systems), that allow to memorize Datasets, regroup more of them in bigger Databases, creating links from one to another, and offer formal ways to retrieve data from them. We can also create algorithms to manipulate this structure.
+Thanks to this formal structure, there are various ways to memorize and elaborate a Dataset: a simple way to memorize a Dataset could be an Excel sheet, but there are also more complex systems, called DBMS (DataBase Management Systems), that allow to memorize Datasets, to regroup more of them in bigger Databases and to create links from one to another, and that also offer formal ways to retrieve data from them. We can also create algorithms to manipulate this structure.
 
 To conclude, thanks to the Dataset structure we can have a first representation and summary of the relevant data regarding a certain population. Those data can now be analyzed with the tools that Statistics offers.
 
@@ -42,3 +42,6 @@ To conclude, thanks to the Dataset structure we can have a first representation 
 [1] [https://en.wikipedia.org/wiki/Statistical_unit](https://en.wikipedia.org/wiki/Statistical_unit) \
 [2] [https://en.wikipedia.org/wiki/Variable_and_attribute_(research)](https://en.wikipedia.org/wiki/Variable_and_attribute_(research)) \
 [3] [https://www.intelligenzaartificialeitalia.net/post/cosa-%C3%A8-un-dataset](https://www.intelligenzaartificialeitalia.net/post/cosa-%C3%A8-un-dataset)
+
+# Research 3 - Find and list interesting applications of Statistics in Cybersecurity
+
