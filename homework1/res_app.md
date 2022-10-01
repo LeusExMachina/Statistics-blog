@@ -14,7 +14,7 @@ While C# is a case sensitive language, VB.NET is not case sensitive. For instanc
 
 - Person
 
-are different variables if declared in C#, but instead are considered the same in VB.NET
+are different variables if declared in C#, but instead are considered the same in VB.NET.
 
 ### Event Handling
 
@@ -76,7 +76,7 @@ Notice then how in C# arrays are addressed with "[]", while in VB they are addre
 
 ### Explicit pointers
 
-A very important difference between C# and VB.NET is that, deriving from C, the first allows the programmer to handle explicit pointers. The same is not permitted by VB.NET
+A very important difference between C# and VB.NET is that, deriving from C, the first allows the programmer to handle explicit pointers. The same is not permitted by VB.NET.
 
 ### Other generic syntax differences
 
