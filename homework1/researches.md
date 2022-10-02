@@ -45,3 +45,11 @@ To conclude, thanks to the Dataset structure we can have a first representation 
 
 # Research 3 - Find and list interesting applications of Statistics in Cybersecurity
 
+In research 1, we defined Statistics as a science that formalizes tools to collect and analyze data in order to get knowledge about the most various topics. We also underlined how these tools are used widely in all other sciences and scientific fields. Also in Cybersecurity, analyzing network and other data with Statistics can provide important informations that allow us to take better decisions and design the most suitable strategies to protect a system.
+
+First of all, thanks to Statistics we can analyze the frequency of cyber attacks, in order to understand if their frequency is increasing or decreasing. For example, cybercrime in 2020 increased by a percentage of 19% compared to 2019, and this data is increasing. Such a statistic points out how important is to adopt risk management techniques in order to avoid or mitigate possible damages to the attacked systems.
+
+Another information we can draw from statistics is which are the main targets of cyber criminals, and what is their purpose.
+
+**References - Q3** \
+[1] [https://www.websiterating.com/it/research/cybersecurity-statistics-facts/](https://www.websiterating.com/it/research/cybersecurity-statistics-facts/)
