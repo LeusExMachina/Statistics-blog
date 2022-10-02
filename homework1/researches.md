@@ -47,9 +47,19 @@ To conclude, thanks to the Dataset structure we can have a first representation 
 
 In research 1, we defined Statistics as a science that formalizes tools to collect and analyze data in order to get knowledge about the most various topics. We also underlined how these tools are used widely in all other sciences and scientific fields. Also in Cybersecurity, analyzing network and other data with Statistics can provide important informations that allow us to take better decisions and design the most suitable strategies to protect a system.
 
-First of all, thanks to Statistics we can analyze the frequency of cyber attacks, in order to understand if their frequency is increasing or decreasing. For example, cybercrime in 2020 increased by a percentage of 19% compared to 2019, and this data is increasing. Such a statistic points out how important is to adopt risk management techniques in order to avoid or mitigate possible damages to the attacked systems.
+First of all, thanks to Statistics we can analyze the frequency of cyber attacks, in order to understand if their frequency is increasing or decreasing. For example, cybercrime in 2020 increased by a percentage of 19% compared to 2019[1], going higher. Such a statistic points out how important is to adopt risk management techniques in order to avoid or mitigate possible damages to the attacked systems.
 
-Another information we can draw from statistics is which are the main targets of cyber criminals, and what is their purpose.
+Another information we can draw from statistics is which are the main targets of cyber criminals, and what is their purpose. As an example, it's documented that the 50% of the cyber attacks are directed against the SMBs (Small and Medium Businesses). Hence, it seems clear that those kind of businesses need more cyber protection, something that has a cost: in 2021, enterprises saw the annual cost of cyber security increase 22.7%[2]. In order to mitigate those costs, it may be useful to identify which are the major treaths and the weakest points, to do a mirate risk management without protecting something less important. Also this information can be drawn by statistics.
+
+As an example, it was calculated that 85% of breaches involve human interaction and then human mistakes[3], something that is linked to the fact that since 2016 phishing substituted malaware as the fist form of attack in malicious websites[4]. An information to be understood from those data is that doing an appropriate training to employees is as important as (if not more important than) creating a secure infrastructure.
+
+We can then get informations about the best prevention methods, with AI-driven security that has the best benefits-cost ratio[2].
+
+To conclude, Statistics can be applied to Cybersecurity as it's applied to any other field that needs to plan and to manage risks: to understand the behaviour of the adversary and to contrast it in the best way.
+
 
 **References - Q3** \
 [1] [https://www.websiterating.com/it/research/cybersecurity-statistics-facts/](https://www.websiterating.com/it/research/cybersecurity-statistics-facts/)
+[2] [https://purplesec.us/resources/cyber-security-statistics/#Cybercrime](https://purplesec.us/resources/cyber-security-statistics/#Cybercrime)
+[3] [https://www.shrm.org/resourcesandtools/hr-topics/technology/pages/data-breach-report-emphasizes-cybersecurity-human-element.aspx](https://www.shrm.org/resourcesandtools/hr-topics/technology/pages/data-breach-report-emphasizes-cybersecurity-human-element.aspx)
+[4] [https://purplesec.us/resources/cyber-security-statistics/#SocialEngineering](https://purplesec.us/resources/cyber-security-statistics/#SocialEngineering)
