@@ -59,7 +59,7 @@ To conclude, Statistics can be applied to Cybersecurity as it's applied to any o
 
 
 **References - Q3** \
-[1] [https://www.websiterating.com/it/research/cybersecurity-statistics-facts/](https://www.websiterating.com/it/research/cybersecurity-statistics-facts/)
-[2] [https://purplesec.us/resources/cyber-security-statistics/#Cybercrime](https://purplesec.us/resources/cyber-security-statistics/#Cybercrime)
-[3] [https://www.shrm.org/resourcesandtools/hr-topics/technology/pages/data-breach-report-emphasizes-cybersecurity-human-element.aspx](https://www.shrm.org/resourcesandtools/hr-topics/technology/pages/data-breach-report-emphasizes-cybersecurity-human-element.aspx)
+[1] [https://www.websiterating.com/it/research/cybersecurity-statistics-facts/](https://www.websiterating.com/it/research/cybersecurity-statistics-facts/) \
+[2] [https://purplesec.us/resources/cyber-security-statistics/#Cybercrime](https://purplesec.us/resources/cyber-security-statistics/#Cybercrime) \
+[3] [https://www.shrm.org/resourcesandtools/hr-topics/technology/pages/data-breach-report-emphasizes-cybersecurity-human-element.aspx](https://www.shrm.org/resourcesandtools/hr-topics/technology/pages/data-breach-report-emphasizes-cybersecurity-human-element.aspx) \
 [4] [https://purplesec.us/resources/cyber-security-statistics/#SocialEngineering](https://purplesec.us/resources/cyber-security-statistics/#SocialEngineering)
