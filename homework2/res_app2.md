@@ -38,7 +38,7 @@ A problem that the CSV file format has is that it lacks a real standard that for
 
        "aaa","b""bb","ccc"
 
-Although the RFC 4180 lists those features for the CSV format, it also states (as previously mentioned) that this list of features isn't meant to define a precise standard, but just wants to point out the common points amongst various implementation. Thus the CSV format remains widely used but not precisely defined.
+Although the RFC 4180 lists those features for the CSV format, it also states (as previously mentioned) that this list of features isn't meant to define a precise standard, but just wants to point out the common points amongst various implementations. Thus the CSV format remains widely used but not precisely defined.
 
 For instance it happens very often that, although the name himself of the file mentiones commas, the values in the lines are separated by a different separator: a common alternative to the comma (",") is the semicolon (";"), but we can also find CSV files with values separated by a simple space (" "). This of course can create problems of various kinds when parsing the file. Because of that the softwares or the libraries that parse CSV files often ask, as parameters, info on the file they are going to parse in order to avoid errors of any kind.
 
