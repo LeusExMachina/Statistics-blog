@@ -9,10 +9,10 @@ A problem that the CSV file format has is that it lacks a real standard that for
        aaa,bbb,ccc CRLF
        zzz,yyy,xxx CRLF
 
-2. Each record is located on a separate line, delimited by a line break (CRLF). For example:
+2. The last record in the file may or may not have an ending line break. For example:
 
        aaa,bbb,ccc CRLF
-       zzz,yyy,xxx CRLF
+       zzz,yyy,xxx
 
 3. There maybe an optional header line appearing as the first line of the file with the same format as normal record lines. This header will contain names corresponding to the fields in the file and should contain the same number of fields as the records in the rest of the file. For example:
 
