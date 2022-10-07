@@ -32,7 +32,7 @@ We can notice how this distribution is very different from the univariate: the t
 
 $$\sum_{j=1}^n n_{i,j} = n_i^x$$
 
-prova
+prova 2
 
 **References** \
 [1] [https://www.mygreatlearning.com/blog/understanding-distributions-in-statistics/](https://www.mygreatlearning.com/blog/understanding-distributions-in-statistics/) \
