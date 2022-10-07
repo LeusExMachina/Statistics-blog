@@ -1,4 +1,5 @@
 theme: jekyll-theme-minimal
 title: Leonardo Cataldi's blog for Statistics' homeworks
+math_engine: mathjax
 github:
   is_project_page: false

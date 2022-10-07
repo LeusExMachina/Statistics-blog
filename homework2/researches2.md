@@ -32,6 +32,8 @@ We can notice how this distribution is very different from the univariate: the t
 
 $$\sum_{j=1}^n n_{i,j} = n_i^x$$
 
+prova
+
 **References** \
 [1] [https://www.mygreatlearning.com/blog/understanding-distributions-in-statistics/](https://www.mygreatlearning.com/blog/understanding-distributions-in-statistics/) \
 [2] [https://www.kaggle.com/code/nowke9/statistics-2-distributions](https://www.kaggle.com/code/nowke9/statistics-2-distributions) \
