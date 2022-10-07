@@ -1,3 +1,7 @@
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
 # Research 4 - Concept of distribution. Univariate and multivariate. Conditional and marginal distributions.
 
  When talking about distribution in Statistics we may refer to two different concepts:
