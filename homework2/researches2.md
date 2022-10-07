@@ -12,14 +12,14 @@
  
  A Frequency Distribution is related to one or more of those attributes, and shows the number of the occurrences of all the possible values (or combination of values) assumed by them. Notice that we need to introduce a distinction between the attributes that are analyzed:
 
- - For **categorical attributes** (True/False, Yes/No), we often see the occurrences of any possible outcome.
+ - For **categorical attributes** (True/False, Yes/No), we often see the number of the occurrences of any possible outcome.
 
- - For **numerical attributes** (e.g. height, salary, ecc), it would be to difficult (if not impossible, in case of a continuous variable) to represent each possible value. Therefore, all the possible outcomes are grouped and the occurrence reported for a group sums all the occurrences of all the values in the group.
+ - For **numerical attributes** (e.g. height, salary, ecc), it would be to difficult (if not impossible, in case of a continuous variable) to represent each possible value. Therefore, all the possible outcomes are grouped and the frequency reported for a group sums all the frequencies of all the values in the group.
 
 We told that a distribution can refer to a single attribute or to more than one attribute. We have then to distinguish between **univariate distributions** and **multivariate distributions**.
 
-A **univariate distribution** refers just to one attribute, and can be represented with a table with two columns: on the left, we have all the possible values assumed by the attribute under analysis (or all the groups i decided to create in case of numerical attributes) while on the right i have, for each value (or group), the number of times that value appears in the dataset for that attribute. This can be seen in the image below:
+A **univariate distribution** refers just to one attribute, and can be represented with a table with two columns: on the left, we have all the possible values assumed by the attribute under analysis (or all the groups we decided to create in case of numerical attributes) while on the right we have, for each value (or group), the number of times that value appears in the dataset for that attribute. This can be seen in the image below:
 
 ![Univariate distribution](/StatisticsHomework/docs/assets/images/univariate.jpg)
 
-Notice how the occurrences of each value can be represented in 3 ways: we can report the **absolute frequency**, that is exactly the number of times that value appears, we can report the **relative frequency**, obtained dividing the absolute frequency for the cardinality of the statistical population we consider, or we can report the **percentage**, obtained multiplying the relative frequency by 100.
+Notice how the frequency of each value can be represented in 3 ways: we can report the **absolute frequency**, that is exactly the number of times that value appears, we can report the **relative frequency**, obtained dividing the absolute frequency for the cardinality of the statistical population we consider, or we can report the **percentage**, obtained multiplying the relative frequency by 100.
