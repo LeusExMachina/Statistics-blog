@@ -41,7 +41,9 @@ A **multivariate distribution**, instead, refers to more than one attribute: for
 
 We can notice how this distribution is very different from the univariate: the table consists in a matrix of n rows and m columns. For each row i have a possible value for attribute $X$, while for each column i have a possible value for attribute $Y$. In the cell $(i,j)$ of the matrix we have the frequency of the statistical units that simultaneously have $X_{i}$ as the value for attribute $X$ and $Y_{j}$ as the value for attribute $Y$.
 
-$$\sum_{j=1}^n n_{i,j} = n_i^x$$
+$$\sum_{j=1}^m n_{i,j} = n_i^x$$
+
+$$\sum_{i=1}^n n_{i,j} = n_j^y$$
 
 **References** \
 [1] [https://www.mygreatlearning.com/blog/understanding-distributions-in-statistics/](https://www.mygreatlearning.com/blog/understanding-distributions-in-statistics/) \
