@@ -19,7 +19,7 @@
 
  The first is more related to Probability Theory, and consists in a function that gives the probabilities of occurrence of different possible outcomes in an experiment. The second, instead, is more related to actual Statistics, and is a representation showing all the possible values a certain attribute can assume and how often those values occur. In this research, we focus on frequency distribution.
 
- Given a certain population, we can create a dataset that summarizes some informations about that population. A dataset (or data matrix) is composed by rows and columns, with each row referring to a statistical unit and each column representing an attribute. In a cell $(i,j)$ of the matrix we will have the value assumed by the attribute j for the statistical unit i. 
+ Given a certain population, we can create a dataset that summarizes some informations about that population. A dataset (or data matrix) is composed by rows and columns, with each row referring to a statistical unit and each column representing an attribute. In a cell $(i,j)$ of the matrix we will have the value assumed by the attribute $j$ for the statistical unit $i$.
  
  A Frequency Distribution is related to one or more of those attributes, and shows the number of the occurrences of all the possible values (or combination of values) assumed by them. Notice that we need to introduce a distinction between the attributes that are analyzed:
 
@@ -42,8 +42,6 @@ A **multivariate distribution**, instead, refers to more than one attribute: for
 We can notice how this distribution is very different from the univariate: the table consists in a matrix of n rows and m columns. For each row i have a possible value for attribute $X$, while for each column i have a possible value for attribute $Y$. In the cell $(i,j)$ of the matrix we have the frequency of the statistical units that simultaneously have $X_{i}$ as the value for attribute $X$ and $Y_{j}$ as the value for attribute $Y$.
 
 $$\sum_{j=1}^n n_{i,j} = n_i^x$$
-
-prova 3
 
 **References** \
 [1] [https://www.mygreatlearning.com/blog/understanding-distributions-in-statistics/](https://www.mygreatlearning.com/blog/understanding-distributions-in-statistics/) \
