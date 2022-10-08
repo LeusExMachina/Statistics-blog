@@ -39,11 +39,24 @@ A **multivariate distribution**, instead, refers to more than one attribute: for
 
 ![Bivariate distribution](/StatisticsHomework/docs/assets/images/bivariate.jpg)
 
-We can notice how this distribution is very different from the univariate: the table consists in a matrix of $n$ rows and $m$ columns. For each row I have a possible value for attribute $X$, while for each column I have a possible value for attribute $Y$. In the cell $(i,j)$ of the matrix we have the frequency of the statistical units that simultaneously have $X_{i}$ as the value for attribute $X$ and $Y_{j}$ as the value for attribute $Y$.
+We can notice how this distribution is very different from the univariate: the table consists in a matrix of $n$ rows and $m$ columns. For each row I have a possible value for the attribute $X$, while for each column I have a possible value for the attribute $Y$. In the cell $(i,j)$ of the matrix we have the frequency of the statistical units that simultaneously have $X_{i}$ as the value for attribute $X$ and $Y_{j}$ as the value for attribute $Y$.
+
+The bivariate distribution gives us the possibility to define two important new concepts: the **marginal distribution** and the **conditional distribution**. Given a bivariate contingency table, we can sum all the values on each row and obtain an additional column:
 
 $$\sum_{j=1}^m n_{i,j} = n_i^x$$
 
+In the same way, we can sum all the values on each column and obtain an additional row:
+
 $$\sum_{i=1}^n n_{i,j} = n_j^y$$
+
+This additional column and this additional row are called marginal distributions respectively of $X$ and $Y$, and are so called because they are at the margin of the table. It's easy to see that the marginal distribution of $X$ is the univariate distribution of $X$, as the marginal distribution of $Y$ is the univariate distribution of $Y$. We can then see that a bivariate table contains much more informations than a univariate table, because it contains the univariate providing also more informations.
+
+We can now, instead, consider a single row or a single column from the table. A single column (or row) is also called conditional distribution of $X$ (or $Y$): this because it represents the univariate distribution of $X$ (or $Y$), conditioned on a specific value of attribute $Y$ (or $X$). This can be better explained with an example: if we take the column $j$ from the table, what we will obtain is the frequency distribution of all the possible values assumed by $X$, as long as the statistical units that we consider have the value $Y_j$ for the attribute $Y$. Conditioned distributions are very important for statistical analysis: we can confront them with the univariate distribution of the same attribute, understanding if a relationships between a certain value of an attribute and the distribution of another one exists.
+
+In the image below are represented examples of marginal and conditional distributions:
+
+![Marginal and conditional distributions](/StatisticsHomework/docs/assets/images/marg-cond.jpg)
+
 
 **References** \
 [1] [https://www.mygreatlearning.com/blog/understanding-distributions-in-statistics/](https://www.mygreatlearning.com/blog/understanding-distributions-in-statistics/) \
