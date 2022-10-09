@@ -14,7 +14,8 @@ A video of the application can be watched below:
   </iframe>
 </div>
 
-The application I decided to create consists in a picture box and of a rich text box. Pressing the button "Start!", a timer starts to tick every 0.5 seconds; for each tick, the picturebox shows a new random colour and the rich text box appends a new string. Both the lenght and the content of the string are randomic.
+
+The application I decided to create consists in a picture box and in a rich text box. Pressing the button "Start!", a timer starts to tick every 0.5 seconds; for each tick, the picturebox shows a new random colour and the rich text box appends a new string. Both the length and the content of the string are randomic.
 
 The C# code is the following:
 
@@ -133,6 +134,7 @@ A video of the application can be watched below:
       allowfullscreen="">
   </iframe>
 </div>
+
 
 I decided to implement applications 3 and 4 in a unique single application, that parses a CSV file and then calculates the univariate distribution of an attribute i chose. In particular, the csv file i selected contains info about some videogames, and the attribute on which the distribution is calculated is "Console", that represents the particular device for which the videogame was created.
 
