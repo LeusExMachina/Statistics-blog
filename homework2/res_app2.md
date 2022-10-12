@@ -1,4 +1,4 @@
-# Research on Application 1 - The CSV protocol (definition and rules)
+# Research on Application 2 - The CSV protocol (definition and rules)
 
 A file with Comma Separated Values, also called CSV file, is an easy way to represent data in a tabular way within a simple text file. In fact, the file basically consists in a sequence of lines, each of them corresponding to a certain unit. In each line there is a list of values, the attributes of the unit, separated by a comma (hence Comma Separated Values). Because of its simplicity and immediacy, it's still today widely used to store and exchange data of any kind.
 
