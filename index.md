@@ -6,3 +6,5 @@
 # [Homework 1](https://leusexmachina.github.io/StatisticsHomework/homework1)
 
 # [Homework 2](https://leusexmachina.github.io/StatisticsHomework/homework2)
+
+# [Homework 3](https://leusexmachina.github.io/StatisticsHomework/homework3)
