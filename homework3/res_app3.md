@@ -36,3 +36,29 @@ Notice that, even if online algorithms are good if the input is a stream and als
 
 # Research on Application 4 - Knuth's online algorithm for the arithmetic mean
 
+Given a sequence of $n$ numbers, their arithmetic mean is defined as the sum of all those $n$ numbers divided by the cardinality of the sequence:
+
+$$\dfrac{\sum_{i=1}^n x_{i}}{n}$$
+
+If I want to compute the arithmetic mean in a software, an immediate "naive" implementation comes directly from the definition: I can sum all the numbers I have and then divide by the cardinality. Although apparently easy, this solution can lead to two major problems:
+
+1. offline solution
+
+2. floating point errors
+
+The first point is related to the fact that this implementation, as it was presented before, needs all the input numbers to be available immediately: the algorithm is not suitable to compute the average of a stream of numbers.
+
+This first problem can be actually easily solved by memorizing an intermediate variable "sum" that contains the sum of all the numbers and is updated every time a new input arrives, to be then divided by the number of inputs recieved. This solution, however, leads to problem two.
+
+In fact, the second problem is related to the floating point representation of decimal numbers in computers. Since decimal numbers are represented with an exponent and a mantissa, a too big number can loose precision since the exponent grows and significant digits can be lost. This can lead to big approximations and also to catastrophic cancellations. For this reason, calculating the sum of each value to then divide by $n$ can cause severe problems.
+
+The solution to both those critical points is using an online algorithm that expresses the value of the mean of $n$ numbers as a function of the mean of $n-1$ numbers and a new input. Applying this to a stream of inputs allows us to calculate the mean at every new input without loss of precision. The Knuth's algorithm derives from the following mathematical equivalence:
+
+$$\dfrac{\sum_{i=1}^n x_{i}}{n} = 1/n*(\dfrac{\sum_{i=1}^n-1 x_{i}}{n-1} + x_{n})$$
+
+If now i denote $\overline{x_n}$ the average of $n$ numbers and $\overline{x_{n-1}}$ the average of $n-1$ numbers i can rewrite:
+
+$$1/n*(\dfrac{\sum_{i=1}^n-1 x_{i}}{n-1} + x_{n}) = 1/n*(\overline{x_{n-1}*(n-1)} + x_n)$$
+
+**References - Q4** \
+[1] [https://nullbuffer.com/articles/welford_algorithm.html#references](https://nullbuffer.com/articles/welford_algorithm.html#references)
