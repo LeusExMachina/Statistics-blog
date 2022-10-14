@@ -52,7 +52,7 @@ This first problem can be actually easily solved by memorizing an intermediate v
 
 In fact, the second problem is related to the floating point representation of decimal numbers in computers. Since decimal numbers are represented with an exponent and a mantissa, a too big number can loose precision since the exponent grows and significant digits can be lost. This can lead to big approximations and also to catastrophic cancellations. For this reason, calculating the sum of each value to then divide by $n$ can cause severe problems.
 
-The solution to both those critical points is using an online algorithm that expresses the value of the mean of $n$ numbers as a function of the mean of $n-1$ numbers and a new input. Applying this to a stream of inputs allows us to calculate the mean at every new input without loss of precision. The Knuth's algorithm derives from the following mathematical equivalence:
+The solution to both those critical points is using an online algorithm that expresses the value of the mean of $n$ numbers as a function of the mean of $n-1$ numbers and a new input. Applying this to a stream of inputs allows us to calculate the mean at every new input without loss of precision. This algorithm, called **Knuth's algorithm**, derives from the following mathematical equivalence:
 
 $$\dfrac{1}{n}\sum_{i=1}^{n} x_{i} = \dfrac{1}{n}(\dfrac{1}{n-1}\sum_{i=1}^{n-1} x_{i}(n-1) + x_{n})$$
 
@@ -63,6 +63,8 @@ $$\dfrac{1}{n}(\dfrac{1}{n-1}\sum_{i=1}^{n-1} x_{i}(n-1) + x_{n}) = \dfrac{1}{n}
 I can then finally obtain:
 
 $$\overline{x_n} = \overline{x_{n-1}} + \dfrac{1}{n}(x_n - \overline{x_{n-1}})$$
+
+With this mathematical equivalence I expressed the mean of $n$ numbers as the mean of the $n-1$ previous numbers plus a new contribute consisting in the difference of the new input and the previous mean, all divided by $n$. Since this new contribute is small, i don't have to worry about getting too big values and having problems with floating point representation.
 
 **References - Q4** \
 [1] [https://nullbuffer.com/articles/welford_algorithm.html#references](https://nullbuffer.com/articles/welford_algorithm.html#references)
