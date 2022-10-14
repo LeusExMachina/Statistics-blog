@@ -38,7 +38,7 @@ Notice that, even if online algorithms are good if the input is a stream and als
 
 Given a sequence of $n$ numbers, their arithmetic mean is defined as the sum of all those $n$ numbers divided by the cardinality of the sequence:
 
-$$\dfrac{\sum_{i=1}^{n} x_{i}}{n}$$
+$$\dfrac{1}{n}\sum_{i=1}^{n} x_{i}$$
 
 If I want to compute the arithmetic mean in a software, an immediate "naive" implementation comes directly from the definition: I can sum all the numbers I have and then divide by the cardinality. Although apparently easy, this solution can lead to two major problems:
 
@@ -54,7 +54,7 @@ In fact, the second problem is related to the floating point representation of d
 
 The solution to both those critical points is using an online algorithm that expresses the value of the mean of $n$ numbers as a function of the mean of $n-1$ numbers and a new input. Applying this to a stream of inputs allows us to calculate the mean at every new input without loss of precision. The Knuth's algorithm derives from the following mathematical equivalence:
 
-$$\dfrac{\sum_{i=1}^{n} x_{i}}{n} = \dfrac{1}{n}(\dfrac{\sum_{i=1}^{n-1} x_{i}}{n-1} + x_{n})$$
+$$\dfrac{1}{n}\sum_{i=1}^{n} x_{i} = \dfrac{1}{n}(\dfrac{1}{n-1}\sum_{i=1}^{n-1} x_{i}(n-1) + x_{n})$$
 
 If now i denote $\overline{x_n}$ the average of $n$ numbers and $\overline{x_{n-1}}$ the average of $n-1$ numbers i can rewrite:
 
