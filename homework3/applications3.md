@@ -14,7 +14,7 @@ A video of the application can be watched down below:
   </iframe>
 </div>
 
-This application has to be tought as an improvement of application 3&4. In fact, it parses a csv file and computes the univariate distribution of some variables, but it does it better and implements some new features.
+This application has to be considered as an improvement of application 3&4. In fact, it parses a csv file and computes the univariate distribution of some variables, but it does it better and implements some new features.
 
 First of all, the parsed file is shown in a DataGridView so that it can be analyzed by the user even before calculating the distributions. Then, we can see how the app gives the possibility to calculate the distribution of two variables, a continuous and a discrete one, and also those distributions are reported in a DataGridView.
 
