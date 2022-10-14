@@ -56,13 +56,13 @@ The solution to both those critical points is using an online algorithm that exp
 
 $$\dfrac{1}{n}\sum_{i=1}^{n} x_{i} = \dfrac{1}{n}(\dfrac{1}{n-1}\sum_{i=1}^{n-1} x_{i}(n-1) + x_{n})$$
 
-If now i denote $\overline{x}_n$ the average of $n$ numbers and $\overline{x}_{n-1}$ the average of $n-1$ numbers i can rewrite:
+If now i denote $\overline{x_n}$ the average of $n$ numbers and $\overline{x_{n-1}}$ the average of $n-1$ numbers i can rewrite:
 
-$$\dfrac{1}{n}(\dfrac{1}{n-1}\sum_{i=1}^{n-1} x_{i}(n-1) + x_{n}) = \dfrac{1}{n}(\overline{x}_{n-1}(n-1) + x_n) = \dfrac{1}{n}(n\overline{x}_{n-1} - \overline{x}_{n-1} + x_n)$$
+$$\dfrac{1}{n}(\dfrac{1}{n-1}\sum_{i=1}^{n-1} x_{i}(n-1) + x_{n}) = \dfrac{1}{n}(\overline{x_{n-1}}(n-1) + x_n) = \dfrac{1}{n}(n\overline{x_{n-1}} - \overline{x_{n-1}} + x_n)$$
 
 I can then finally obtain:
 
-$$\overline{x}_n = \overline{x}_{n-1} + \dfrac{1}{n}(x_n - \overline{x}_{n-1})$$
+$$\overline{x_n} = \overline{x_{n-1}} + \dfrac{1}{n}(x_n - \overline{x_{n-1}})$$
 
 **References - Q4** \
 [1] [https://nullbuffer.com/articles/welford_algorithm.html#references](https://nullbuffer.com/articles/welford_algorithm.html#references)
