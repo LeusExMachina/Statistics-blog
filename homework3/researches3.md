@@ -13,13 +13,13 @@
 
 To illustrate the concepts of conditional, marginal and relative frequency we must start from a bivariate distribution. A bivariate distribution reports in a contingency table the frequencies of all the possible values assumed by two attributes of a certain statistical set. A generic bivariate distribution is the following:
 
-![Bivariate distribution](StatisticsHomework/docs/assets/images/bivariate.jpg)
+![Bivariate distribution](/StatisticsHomework/docs/assets/images/bivariate.jpg)
 
 In this generic representation, we have the two attributes $X$ and $Y$. In the cell $(i,j)$ of the table it is reported the frequency of those statistical units that have $X_i$ as a value for attribute $X$ and $Y_j$ as a value for attribute $Y$. In this generic example the reported frequencies are absolute frequencies, meaning that they represent the exact number of statistical units having those values for those attributes. Much more interesting is to study the relative frequencies, that are the above absolute frequencies divided for the total number of the statistical units considered.
 
 In order to explain better the concept of conditional, joint and marginal frequencies let's take, as an example, the following bivariate distribution:
 
-![example](StatisticsHomework/docs/assets/images/simplebivar.png)
+![example](/StatisticsHomework/docs/assets/images/simplebivar.png)
 
 The distribution was created on a total set of 150 people. The attributes considered are their sex and the subject they considered the most difficult at school. The frequencies reported are absolute frequencies.
 
@@ -52,6 +52,16 @@ In the above notation, the dot (".") represents the attribute on which we operat
 Finally, the **conditional relative frequency** is the frequency of a certain value of one of the two attributes, but this time calculated over a subset of the statistical units. This subset is created by considering only those units that have a specific value for the other attribute. Referring to the above distribution, the frequency of the value "Men" for attribute "Sex", conditioned on the value "English" for the attribute "Subject", is the following:
 
 $$freq(Men|English) = \dfrac{57}{74} = 0,77$$
+
+We can notice how the numerator is the joint frequency of "Men" and "English", because we have to consider only those men who have "English" as the value for attribute "Subject", while the denominator is the absolute marginal frequency of the value "English", since we want the cardinality of the subset composed by those units that have "English" as the value of the attribute "Subject".
+
+If we again generalize to the generic attributes $X$ and $Y$:
+
+$$f_{i/j} = freq(X_i|Y_j) = \dfrac{n_{i,j}}{N_j}$$
+
+$$f_{j/i} = freq(Y_j|X_i) = \dfrac{n_{i,j}}{N_i}$$
+
+Where $N_i$ and $N_j$ are respectively the cardinality of the subset of the units having the value $X_i$ for the attribute $X$ and the cardinality of the subset having the value $Y_j$ for the attribute $Y$.
 
 **References** \
 [1] [https://study.com/learn/lesson/conditional-joint-marginal-relative-frequency-overview-comparison-examples.html#:~:text=Marginal%20relative%20frequency%20is%20the%20ratio%20of%20the%20sum%20of,total%20or%20a%20column%20total.](https://study.com/learn/lesson/conditional-joint-marginal-relative-frequency-overview-comparison-examples.html#:~:text=Marginal%20relative%20frequency%20is%20the%20ratio%20of%20the%20sum%20of,total%20or%20a%20column%20total.)
