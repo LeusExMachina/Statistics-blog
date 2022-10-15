@@ -43,9 +43,9 @@ $$freq(Women) = \dfrac{55}{150} = 0,37$$
 
 Notice how we made the sum of all the absolute frequencies reported in the row relative to the value "Women", to then divide by the total number of units. We obtained this way the relative frequency of the value "Women": we can say that 37% of the units have the value "Women" for the attribute "Sex", independently from the value assumed by the attribute "Subject". If we generalize to the generic attributes $X$ and $Y$:
 
-$$f_{i,.} = freq(X_i) = \dfrac{1}{N}(\sum_{j = 1}^{m}n_{i,j})$$
+$$f_{i,.} = freq(X_i) = \dfrac{1}{N}(\sum_{j = 1}^{m}n_{i,j}) = \dfrac{N_{i,.}}{N}$$
 
-$$f_{.,j} = freq(Y_j) = \dfrac{1}{N}(\sum_{i = 1}^{n}n_{i,j})$$
+$$f_{.,j} = freq(Y_j) = \dfrac{1}{N}(\sum_{i = 1}^{n}n_{i,j}) = \dfrac{N_{.,j}}{N}$$
 
 In the above notation, the dot (".") represents the attribute on which we operate the marginalization and that we do not consider in the calculation of the frequency.
 
@@ -57,11 +57,23 @@ We can notice how the numerator is the joint frequency of "Men" and "English", b
 
 If we again generalize to the generic attributes $X$ and $Y$:
 
-$$f_{i/j} = freq(X_i|Y_j) = \dfrac{n_{i,j}}{N_j}$$
+$$f_{i/j} = freq(X_i|Y_j) = \dfrac{n_{i,j}}{N_{.,j}}$$
 
-$$f_{j/i} = freq(Y_j|X_i) = \dfrac{n_{i,j}}{N_i}$$
+$$f_{j/i} = freq(Y_j|X_i) = \dfrac{n_{i,j}}{N_{i,.}}$$
 
-Where $N_i$ and $N_j$ are respectively the cardinality of the subset of the units having the value $X_i$ for the attribute $X$ and the cardinality of the subset having the value $Y_j$ for the attribute $Y$.
+Where $N_{i,.}$ and $N_{.,j}$ are respectively the cardinality of the subset of the units having the value $X_i$ for the attribute $X$ and the cardinality of the subset having the value $Y_j$ for the attribute $Y$.
+
+It's now easy to verify that:
+
+$$f_{i/j} =  \dfrac{f_{i,j}}{f_{.,j}} = \dfrac{freq(X_i \cap Y_j)}{freq(Y_j)}$$
+
+$$f_{j/i} =  \dfrac{f_{i,j}}{f_{i,.}} = \dfrac{freq(X_i \cap Y_j)}{freq(X_i)}$$
+
+In fact:
+
+$$f_{i/j} =  \dfrac{freq(X_i \cap Y_j)}{freq(Y_j)} = \dfrac{\dfrac{n_{i,j}}{N}}{\dfrac{N_{.,j}}{N}} = \dfrac{n_{i,j}}{N_{.,j}}$$
+
+$$f_{j/i} =  \dfrac{freq(X_i \cap Y_j)}{freq(X_i)} = \dfrac{\dfrac{n_{i,j}}{N}}{\dfrac{N_{i,.}}{N}} = \dfrac{n_{i,j}}{N_{i,.}}$$
 
 **References** \
 [1] [https://study.com/learn/lesson/conditional-joint-marginal-relative-frequency-overview-comparison-examples.html#:~:text=Marginal%20relative%20frequency%20is%20the%20ratio%20of%20the%20sum%20of,total%20or%20a%20column%20total.](https://study.com/learn/lesson/conditional-joint-marginal-relative-frequency-overview-comparison-examples.html#:~:text=Marginal%20relative%20frequency%20is%20the%20ratio%20of%20the%20sum%20of,total%20or%20a%20column%20total.)
