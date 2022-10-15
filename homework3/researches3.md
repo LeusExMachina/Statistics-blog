@@ -19,7 +19,7 @@ In this generic representation, we have the two attributes $X$ and $Y$. In the c
 
 In order to explain better the concept of conditional, joint and marginal frequencies let's take, as an example, the following bivariate distribution:
 
-![example](/StatisticsHomework/docs/assets/images/simplebivar.png)
+![Example](/StatisticsHomework/docs/assets/images/simplebivar.png)
 
 The distribution was created on a total set of 150 people. The attributes considered are their sex and the subject they considered the most difficult at school. The frequencies reported are absolute frequencies.
 
@@ -80,7 +80,40 @@ $$f_{j/i} =  \dfrac{freq(X_i \cap Y_j)}{freq(X_i)} = \dfrac{\dfrac{n_{i,j}}{N}}{
 
 # Research 6 - illustrate the concept of statistical independence and the resulting mathematical relationship between the above frequencies
 
+Let's take a bivariate distribution. As we have seen in the research above, a bivariate distribution shows the distribution of a pair of attributes. Those attributes are independent if the values of one of them has no effect on the frequency of the values of the other one and vice versa.
 
+Let's take, as an example, the following distribution:
 
-**References** \
-[1] []()
+![Example](/StatisticsHomework/docs/assets/images/amothersimplbiv.jpg)
+
+It's easy to imagine how the two attributes "Eye color" and "Weight" are not correlated by any relation. This can be seen in the distribution: if we consider the single rows or the single columns, although the absolute values reported are of course different, thy are proportioned. If we put in a graph, for example, the absolute conditional distributions of attribute "Weight" over the various values assumed by the attribute "Eye Colour", the shape of those graphs will be the same: the conditional absolute distributions do not vary. This can be better seen if we compute conditional relative frequencies.
+
+In fact, the concept of independence is strictly related to the concepts of joint, marginal and conditional relative frequency that we described above. We said that joint relative frequency of values $X_i$ and $Y_j$ is calculated as:
+
+$$f_{i,j} = freq(X_i \cap Y_j) = \dfrac{n_{i,j}}{N}$$
+
+But if the two attributes $X$ and $Y$ are independent, we will have that:
+
+$$f_{i,j} = freq(X_i \cap Y_j) = freq(X_i)freq(X_j)$$
+
+Where $freq(X_i)$ is the marginal relative frequency of $X_i$ and $freq(Y_j)$ is the marginal relative frequency of $Y_j$. If we compute the joint frequencies of values "Black" and "0-100" we can see this clearly:
+
+$$f_{i,j} = freq(Black \cap 0-100) = \dfrac{15}{53} = 0,28$$
+
+But also:
+
+$$f_{i,j} = freq(Black)freq(0-100) = \dfrac{20}{53}\dfrac{40}{53} = 0,28$$
+
+Another important mathematical consequence of independence is related to conditional relative frequencies, as we stated before. In fact, if $X$ and $Y$ are independent, we will have that:
+
+$$f_{i/j} = freq(X_i|Y_j) = freq(X_i)$$
+
+$$f_{j/i} = freq(Y_j|X_i) = freq(Y_j)$$
+
+In case of independence, the relative frequency of any value of an attribute, conditioned to any value of the other attribute, will be equal to the marginal relative frequency of the value considered. This can be easily seen in the table above, if we condition the frequency of value "Brown" on the value "0-100"
+
+$$freq(Brown) = \dfrac{27}{53} = 0,5$$
+
+$$freq(Brown|0-100) = \dfrac{20}{40} = 0,5$$
+
+This result allows us to say with more precision what we stated initially: even if row by row (or column by column) the absolute distributions may seem different, if we condition on the row value (or on the column value) we see that the resulting distribution is identical to the marginal distribution. This makes evident that the two attributes are independent: the results i obtain if i consider just a conditioned subset of my statistical units are the same i obtain with the whole set. This means that the conditioning attribute has no influence on the conditioned one.
