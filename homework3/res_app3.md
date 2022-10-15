@@ -23,7 +23,7 @@ Many problems can have both offline and online solutions, although not every off
 
 **Insertion sort** is similar to selection sort, since it creates a sorted list out of an unsorted one. However, instead of searching for the minimum in the unsorted list, insertion sort considers the unsorted list as a flow of data: for each element in this list, it will move it to the sorted list collocating it in the right place to obtain an appropriate result. It's immediate to see that this algorithm is an online algorithm: instead of having an initial unsorted list, in fact, we could have a stream of data, and insertion sort would work as well for it.
 
-In Statistics, online algorithms are very important: it's actually not so common to have all the input immediately available, while it's much more common that the data to analyze arrive in a continuous stream and that the result produced must be updated at any iteration.
+In Statistics, online algorithms are very important: it's actually not so common to have all the input immediately available, while it's much more common that the data to analyze arrive in a continuous stream and that the result produced must be updated at every iteration.
 
 Some examples of Statistics' related online algorithms are **Knuth's recursion for mean** and **Welford's algorithm for variance**. They both work expressing the result for input $n$ as a function of the result for input $n-1$ and of the new input. Another advantage of online algorithms is that they can avoid problems with floating point numbers, like catastrophic cancellation.
 
@@ -64,7 +64,7 @@ I can then finally obtain:
 
 $$\overline{x_n} = \overline{x_{n-1}} + \dfrac{1}{n}(x_n - \overline{x_{n-1}})$$
 
-With this mathematical equivalence I expressed the mean of $n$ numbers as the mean of the $n-1$ previous numbers plus a new contribute consisting in the difference of the new input and the previous mean, all divided by $n$. Since this new contribute is small, i don't have to worry about getting too big values and having problems with floating point representation.
+With this mathematical equivalence I expressed the mean of $n$ numbers as the mean of the $n-1$ previous numbers plus a new contribute consisting in the difference of the new input and the previous mean, divided by $n$. Since this new contribute is small, i don't have to worry about getting too big values and having problems with floating point representation.
 
 **References - Q4** \
 [1] [https://nullbuffer.com/articles/welford_algorithm.html#references](https://nullbuffer.com/articles/welford_algorithm.html#references)
