@@ -80,13 +80,13 @@ $$f_{j/i} =  \dfrac{freq(X_i \cap Y_j)}{freq(X_i)} = \dfrac{\dfrac{n_{i,j}}{N}}{
 
 # Research 6 - illustrate the concept of statistical independence and the resulting mathematical relationship between the above frequencies
 
-Let's take a bivariate distribution. As we have seen in the research above, a bivariate distribution shows the distribution of a pair of attributes. Those attributes are independent if the values of one of them has no effect on the frequency of the values of the other one and vice versa.
+Let's take a bivariate distribution. As we have seen in the research above, a bivariate distribution shows the distribution of a pair of attributes. Those attributes are independent if the value of one of them has no effect on the frequency of the values of the other one and vice versa.
 
 Let's take, as an example, the following distribution:
 
 ![Example](/StatisticsHomework/docs/assets/images/amothersimplbiv.jpg)
 
-It's easy to imagine how the two attributes "Eye color" and "Weight" are not correlated by any relation. This can be seen in the distribution: if we consider the single rows or the single columns, although the absolute values reported are of course different, thy are proportioned. If we put in a graph, for example, the absolute conditional distributions of attribute "Weight" over the various values assumed by the attribute "Eye Colour", the shape of those graphs will be the same: the conditional absolute distributions do not vary. This can be better seen if we compute conditional relative frequencies.
+It's easy to imagine how the two attributes "Eye color" and "Weight" are not correlated by any relation. This can be seen in the distribution: if we consider the single rows or the single columns, although the absolute values reported are of course different, they are proportioned. If we put in a graph, for example, the absolute conditional distributions of attribute "Weight" over the various values assumed by the attribute "Eye Colour", the shape of those graphs will be the same: the conditional absolute distributions do not vary. This can be better seen if we compute conditional relative frequencies.
 
 In fact, the concept of independence is strictly related to the concepts of joint, marginal and conditional relative frequency that we described above. We said that joint relative frequency of values $X_i$ and $Y_j$ is calculated as:
 
