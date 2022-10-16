@@ -93,4 +93,4 @@ private void button3_Click(object sender, EventArgs e)
 
 To manage the intervals, a simple class Interval was created. This class only contains two fields "up" and "down", that are respectively the upper and the lower bound of the interval. To count the occurrencies, a dictionary was created. Initially the only interval avaliable is (0,64), but each time the software can't find in the dictionary the interval where the size of the current packet should be collocated, it creates new intervals until it reaches the correct one.
 
-Notice that the dimension of intervals is not the same, but grows. This was done on purpose, because high-dimension packets are less frequent that low-medium dimension ones, and then a great precision at higher sizes is not necessary.
+Notice that the dimension of intervals is not the same, but grows. This was done on purpose, because high-dimension packets are less frequent than low-medium dimension ones, and then a great precision at higher sizes is not necessary.
