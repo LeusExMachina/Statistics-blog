@@ -140,3 +140,12 @@ Whatever valid $P$ we decide to choose, $(X,A,P)$ is a probability space and the
 
 ### Dice toss
 
+Another possible example of measure space is given by a dice toss. In this case, the possible outcomes are all the possible faces of the dice, and then the numbers 1, 2, 3, 4, 5, 6. The probability space $(X,A,P)$ we associate to this experiment is built as follows:
+
+- The set $X$ will be $X = \{1,2,3,4,5,6\}$.
+
+- The $\sigma$-algebra $A$ will be $A = \{\emptyset, \{1\}, \{2\}, \{3\}, \{4\}, \{5\}, \{6\}, \{1,1\}, \{1,2\}, ... , X\}$. Notice how A contains all the possible subsets of A, that are too many to be all reported.
+
+- The probability measure $P$ will assign probability 0 to the empty set $\emptyset$, 1 to the whole set $X$ and $\dfrac{1}{6}$ to each unitary event. The probability of all the other events in $A$ follows by additivity.
+
+So defined, the triple $(X,A,P)$ respects Kolmogorov axioms and is then a probability space. Then, by definition, it's also a measure space.
