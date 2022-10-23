@@ -152,7 +152,7 @@ Another possible example of measure space is given by a dice toss. In this case,
 
 - The set $X$ will be:
 
-$$X = \{1,2,3,4,5,6\}$$.
+$$X = \{1,2,3,4,5,6\}$$
 
 - The $\sigma$-algebra $A$ will be:
 
