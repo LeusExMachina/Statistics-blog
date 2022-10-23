@@ -88,9 +88,46 @@ In fact, while in measure theory we define a measure space, in probability theor
 
 - $P$ is a probability measure, that follows Kolmogorov axioms. As we said, the difference between a probability measure and the more general notion of measure is that a probability measure must assign value 1 to the entire probability space.
 
-This
+This definition manages to overcome all the problems that belonged to the other probability definitions (the classical definition, the frequentist interpretation, the subjective interpretation, ecc...) providing a strong mathematical base and allowing further developement of probability theory.
 
 **References** \
 [1] [https://en.wikipedia.org/wiki/Measure_(mathematics)](https://en.wikipedia.org/wiki/Measure_(mathematics)) \
 [2] [https://en.wikipedia.org/wiki/Measure_space](https://en.wikipedia.org/wiki/Measure_space) \
 [3] [https://en.wikipedia.org/wiki/Probability_measure](https://en.wikipedia.org/wiki/Probability_measure)
+
+# Researches 9 - Discuss some concrete examples of measure space
+
+In the previous research we saw what measure theory is, defining the concepts of measure space and probability space. We now want to make some examples.
+
+### Coin toss
+
+Let's think about a coin toss: the result of this experiment can be either head ("H") or tail ("T"). We want to measure the probability of the possible events that can happen: in order to do so, we can build a probability space $(X,A,P)$ as follows:
+
+- The set $X$ will be $X = \{H, T\}$. As we can see, $X$ contains all the possible outcomes of the experiment.
+
+- The $\sigma$-algebra $A$ will be $A = \{\emptyset, \{H\}, \{T\}, \{H,T\}\}$. As we can see, A contains all the possible subsets of $X$, included the empty set and $X$ itself, and is closed under union, complement and intersection.
+
+- The probability measure $P$ must respect the Kolmogorov axioms.
+
+An example of $P$ that respects all tose axioms is the following:
+
+$$P(\emptyset) = 0$$
+$$P(\{H\}) = 0,5$$
+$$P(\{T\}) = 0,5$$
+$$P(\{H,T\}) = 1$$
+
+We can notice how all the axioms are respected: 
+- $P(E) \geq 0 \qquad \forall E\in A$ - **Non negativity**.
+- $P(X) = 1$ - **Unitarity**
+- $P(\{H\} \cup \{T\}) = P(\{H\}) + P(\{T\})$ - **Additivity**.
+
+This probability measure is very simple, and gives the same probability to both the outcomes of the toss. Neverthless, another possible probability measure $P$ is the following:
+
+$$P(\emptyset) = 0$$
+$$P(\{H\}) = 0,9$$
+$$P(\{T\}) = 0,1$$
+$$P(\{H,T\}) = 1$$
+
+Also this probability measure is valid, since it respects Kolmogorov axioms, and may be realistic, for example, in case of a gimmicked coin.
+
+Whatever valid $P$ we decide to choose, $(X,A,P)$ is a probability space and then, by definition, a measure space
