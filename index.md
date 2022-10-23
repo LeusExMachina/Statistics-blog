@@ -8,3 +8,5 @@
 # [Homework 2](https://leusexmachina.github.io/StatisticsHomework/homework2)
 
 # [Homework 3](https://leusexmachina.github.io/StatisticsHomework/homework3)
+
+# [Homework 4](https://leusexmachina.github.io/StatisticsHomework/homework4)
