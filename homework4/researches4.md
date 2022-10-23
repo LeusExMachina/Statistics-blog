@@ -124,7 +124,7 @@ We can notice how all the axioms are respected:
 - $P(X) = 1$ - **Unitarity**
 - $P(\{H\} \cup \{T\}) = P(\{H\}) + P(\{T\})$ - **Additivity**.
 
-This probability measure is very simple, and gives the same probability to both the outcomes of the toss. Neverthless, another possible probability measure $P$ is the following:
+This probability measure is very simple, and assigns the same probability to both the outcomes of the toss. Neverthless, another possible probability measure $P$ is the following:
 
 $$P(\emptyset) = 0$$
 
