@@ -17,7 +17,7 @@ Doing this, we intuitively described and used some properties that any relative 
 
 1. Relative frequency is non negative and included between 0 and 1:
 
-$$ 0 <= f(A) <= 1%$$
+$$ 0 \leq f(A) \leq 1%$$
 
 2. If $A$ and $B$ are **disjoint events**, meaning that one can't happen if the other one happened, then the relative frequency of $A$ or $B$ is given by the sum of the two single relative frequencies:
 
@@ -54,7 +54,41 @@ Of course this definition has many problems: for example it uses in a not proper
 
 # Research 8 - Illustrate how measure theory provides the mathematical foundation for the probability theory
 
+In mathematics **measure theory** is a theory that introduces the concept of measure. This concept is a generalization and formalization of geometrical measures like volume, area, length, but also of other kind of measures, like mass and, how we will see, probability. These seemingly distinct concepts have many similarities and can often be treated together in a single mathematical context.
 
+The basic object of the measure theory is the **measure space**. A measure space is a triple $(X, A, \mu)$ where:
+
+- $X$ is a set.
+
+- $A$ is a $\sigma$-algebra on the set $X$. A $\sigma$-algebra on a set $X$ is a set of some possible subsets of $X$, closed under the operations of union, complement and intersection. Notice that in order to be a proper $\sigma$-algebra on $X$, $A$ must always contain the empty set $\emptyset$ and the whole set $X$.
+
+- $\mu$ is a measure on the so called **measurable space** $(X, A)$.
+
+The measure $\mu$ associates a value to each possible $E \in A$ and is a proper measure if it has the following properties:
+
+1. **Non-negativity**: for all $E$ in $A$, we have $\mu(E) \geq 0$.
+
+2. **Null empty set**: $\mu(\emptyset)=0$
+
+3. **Countable additivity**: for all countable collections $\{E_{k}\}_{k=1}^{\infty}$ of pairwise disjoint sets in $A$, then:
+
+$$\mu \left(\bigcup _{k=1}^{\infty }E_{k}\right)=\sum _{k=1}^{\infty }\mu (E_{k})$$
+
+It's easy to see that those three properties are the same that, according to the Kolmogorov axioms, belong to the probability (the Null empty set property for probability is easily implied by the three axioms). The only big difference is the Unitarity property, that probability has while measure has not.
+
+We can then say that probability is a measure bound to 1: in other words, probability is a measure that assigns the value 1 to the entire measure space.
+
+Since we defined probability as a measure, we can apply to probability all the results of the measure theory: in this sense, measure theory provides the mathematical foundation of the probability theory.
+
+In fact, while in measure theory we define a measure space, in probability theory we define a **probability space** that is a triple $(X, A, P)$ where:
+
+- $X$ is a set.
+
+- $A$ is a $\sigma$-algebra over $X$. An element $E \in A$ is called **event**.
+
+- $P$ is a probability measure, that follows Kolmogorov axioms. As we said, the difference between a probability measure and the more general notion of measure is that a probability measure must assign value 1 to the entire probability space.
+
+This
 
 **References** \
 [1] [https://en.wikipedia.org/wiki/Measure_(mathematics)](https://en.wikipedia.org/wiki/Measure_(mathematics)) \
