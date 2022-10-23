@@ -160,6 +160,6 @@ $$A = \{\emptyset, \{1\}, \{2\}, \{3\}, \{4\}, \{5\}, \{6\}, \{1,1\}, \{1,2\}, .
 
 Notice how A contains all the possible subsets of A, that are too many to be all reported.
 
-- The probability measure $P$ will assign probability 0 to the empty set $\emptyset$, 1 to the whole set $X$ and $\dfrac{1}{6}$ to each unitary event. The probability of all the other events in $A$ follows by additivity.
+- The probability measure $P$ will assign probability equal to 0 to the empty set $\emptyset$, 1 to the whole set $X$ and $\dfrac{1}{6}$ to each unitary event. The probability of all the other events in $A$ follows by additivity.
 
 So defined, the triple $(X,A,P)$ respects Kolmogorov axioms and is then a probability space. Then, by definition, it's also a measure space.
