@@ -14,4 +14,6 @@ A video of the application can be watched down below:
   </iframe>
 </div>
 
-The application prints some charts obtained making stoc
+The application prints some charts obtained making random experiments. The possible outcome of the experiments are only "Success" and "Fail", and the charts respectively print the evolution of the absolute, relative and normalized frequency of the number of successes. The number of experiments done and the number of lines plotted can be chosen with two trackbars, while the success probability can be changed with the scrollbar on the left.
+
+On the left of the charts, an histogram is printed: this histogram represents the distribution of the last values obtained after all the experiments. The number of intervals and their size are dinamically chosen according to the number of lines plotted and to the results obtained. We can notice from the video how the distribution changes a lot according to the chosen success probability.
