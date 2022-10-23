@@ -95,7 +95,7 @@ This definition manages to overcome all the problems that belonged to the other 
 [2] [https://en.wikipedia.org/wiki/Measure_space](https://en.wikipedia.org/wiki/Measure_space) \
 [3] [https://en.wikipedia.org/wiki/Probability_measure](https://en.wikipedia.org/wiki/Probability_measure)
 
-# Researches 9 - Discuss some concrete examples of measure space
+# Research 9 - Discuss some concrete examples of measure space
 
 In the previous research we saw what measure theory is, defining the concepts of measure space and probability space. We now want to make some examples.
 
@@ -112,8 +112,11 @@ Let's think about a coin toss: the result of this experiment can be either head 
 An example of $P$ that respects all tose axioms is the following:
 
 $$P(\emptyset) = 0$$
+
 $$P(\{H\}) = 0,5$$
+
 $$P(\{T\}) = 0,5$$
+
 $$P(\{H,T\}) = 1$$
 
 We can notice how all the axioms are respected: 
@@ -124,10 +127,16 @@ We can notice how all the axioms are respected:
 This probability measure is very simple, and gives the same probability to both the outcomes of the toss. Neverthless, another possible probability measure $P$ is the following:
 
 $$P(\emptyset) = 0$$
+
 $$P(\{H\}) = 0,9$$
+
 $$P(\{T\}) = 0,1$$
+
 $$P(\{H,T\}) = 1$$
 
 Also this probability measure is valid, since it respects Kolmogorov axioms, and may be realistic, for example, in case of a gimmicked coin.
 
-Whatever valid $P$ we decide to choose, $(X,A,P)$ is a probability space and then, by definition, a measure space
+Whatever valid $P$ we decide to choose, $(X,A,P)$ is a probability space and then, by definition, a measure space.
+
+### Dice toss
+
