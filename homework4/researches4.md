@@ -142,7 +142,7 @@ Whatever valid $P$ we decide to choose, $(X,A,P)$ is a probability space and the
 
 Another possible example of measure space is given by a dice toss. In this case, the possible outcomes are all the possible faces of the dice, and then the numbers 1, 2, 3, 4, 5, 6. The probability space $(X,A,P)$ we associate to this experiment is built as follows:
 
-- The set $X$ will be $X = \{1,2,3,4,5,6\}$.
+- The set $X$ will be $X = \left \{1,2,3,4,5,6 \right \}$.
 
 - The $\sigma$-algebra $A$ will be $A = \{\emptyset, \{1\}, \{2\}, \{3\}, \{4\}, \{5\}, \{6\}, \{1,1\}, \{1,2\}, ... , X\}$. Notice how A contains all the possible subsets of A, that are too many to be all reported.
 
