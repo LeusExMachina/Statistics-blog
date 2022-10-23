@@ -103,9 +103,17 @@ In the previous research we saw what measure theory is, defining the concepts of
 
 Let's think about a coin toss: the result of this experiment can be either head ("H") or tail ("T"). We want to measure the probability of the possible events that can happen: in order to do so, we can build a probability space $(X,A,P)$ as follows:
 
-- The set $X$ will be $X = \{H, T\}$. As we can see, $X$ contains all the possible outcomes of the experiment.
+- The set $X$ will be:
 
-- The $\sigma$-algebra $A$ will be $A = \{\emptyset, \{H\}, \{T\}, \{H,T\}\}$. As we can see, A contains all the possible subsets of $X$, included the empty set and $X$ itself, and is closed under union, complement and intersection.
+$$X = \{H, T\}$$
+
+As we can see, $X$ contains all the possible outcomes of the experiment.
+
+- The $\sigma$-algebra $A$ will be:
+
+$$A = \{\emptyset, \{H\}, \{T\}, \{H,T\}\}$$
+
+As we can see, A contains all the possible subsets of $X$, included the empty set and $X$ itself, and is closed under union, complement and intersection.
 
 - The probability measure $P$ must respect the Kolmogorov axioms.
 
@@ -122,7 +130,7 @@ $$P(\{H,T\}) = 1$$
 We can notice how all the axioms are respected: 
 - $P(E) \geq 0 \qquad \forall E\in A$ - **Non negativity**.
 - $P(X) = 1$ - **Unitarity**
-- $P(\{H\} \cup \{T\}) = P(\{H\}) + P(\{T\})$ - **Additivity**.
+- $P(H \cup T) = P(H) + P(T)$ - **Additivity**.
 
 This probability measure is very simple, and assigns the same probability to both the outcomes of the toss. Neverthless, another possible probability measure $P$ is the following:
 
@@ -142,9 +150,15 @@ Whatever valid $P$ we decide to choose, $(X,A,P)$ is a probability space and the
 
 Another possible example of measure space is given by a dice toss. In this case, the possible outcomes are all the possible faces of the dice, and then the numbers 1, 2, 3, 4, 5, 6. The probability space $(X,A,P)$ we associate to this experiment is built as follows:
 
-- The set $X$ will be $X = \left \{1,2,3,4,5,6 \right \}$.
+- The set $X$ will be:
 
-- The $\sigma$-algebra $A$ will be $A = \{\emptyset, \{1\}, \{2\}, \{3\}, \{4\}, \{5\}, \{6\}, \{1,1\}, \{1,2\}, ... , X\}$. Notice how A contains all the possible subsets of A, that are too many to be all reported.
+$$X = \{1,2,3,4,5,6\}$$.
+
+- The $\sigma$-algebra $A$ will be:
+
+$$A = \{\emptyset, \{1\}, \{2\}, \{3\}, \{4\}, \{5\}, \{6\}, \{1,1\}, \{1,2\}, ... , X\}$$
+
+Notice how A contains all the possible subsets of A, that are too many to be all reported.
 
 - The probability measure $P$ will assign probability 0 to the empty set $\emptyset$, 1 to the whole set $X$ and $\dfrac{1}{6}$ to each unitary event. The probability of all the other events in $A$ follows by additivity.
 
