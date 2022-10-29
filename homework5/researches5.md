@@ -157,11 +157,37 @@ This is the power mean of order m. We can notice that if $m = 1$ we have the **a
 
 In progress...
 
-**References** \
+**References**
 
 # Research 12 -  Descriptive Statistics and Inferential Statistics. The role of probability and probability distributions.
 
+As I mentioned in [research 1](https://leusexmachina.github.io/StatisticsHomework/homework1/researches), the discipline of Statistics can be divided in 2 major branches, that are:
 
+1. Descriptive statistics
+
+2. Inferential statistics
+
+Descriptive statistics defines methods and processes to describe or summarize data and features. In descriptive statistics we have a certain **known** population, that is a set of statistical units. Through a process of survey we get informations on those statistical units about those attributes we decide to analyze: we often mentioned that the structure used by descriprive statistics to collect and store those informations is the *dataset*.
+
+Then in our dataset we will have all the informations about a population (of course only those informations we decide to collect): given this dataset, we can analyze the informations collected through the various methods and instruments descriptive statistics defines.
+
+For example, given a certain dataset, we can choose one or more attributes and compute the univariate or multivariate distribution of those attributes. These distributions report the real frequencies (absolute or relative) of the values (or combination of values) of the attributes we chose. We can also compute some statistics (as functions on the data) of the collected informations: some examples are the mean, the median, ecc...
+
+To summarize, descriptive statistics cares about entire sets of known entities, and describes the tendencies of those sets.
+
+Inferential statistics is very different from descriptive statistics. In fact, the target of inferential statistics is not to describe a given known population, but to inference informations on an **unknown** population, having only a sample of it.
+
+In other words, while in descriptive statistics the population is known and the purpose of the discipline is to describe it, in inferential statistics only a sample of the population can be analyzed, and the goal is to determine with more or less precision the general tendencies of the whole population given the analysis of the sample.
+
+Inferential statistics is very important, for example, in scientific medical research: in medical trials a medicine is tested only on a representative sample of the entire world population, and the collected data are used to infernce the effectiveness of the medicine on the entire population.
+
+When we pass from descriptive to inferential statistics, the concept of probability starts to have a role. In fact, when we are in descriptive statistics, we don't need probability: we analyze the *frequency* of events and attribute values, since the entire population is known and measurable. Otherwise, in inferential statistics, we cannot determine the frequency of a certain event or attribute value, since the great majority of the population is unknown and can't be measured. What we try to infer, instead, is the **probability** of a certain event or of a certain attribute value on the entire population, given its frequency in the sample set.
+
+The same thing happens for distributions. In descriptive statistics, all the distributions we saw were frequency distributions, that summarize the frequency of the values that one or more attributes can assume in a certain known set of statistical units. If we pass to inferential statistics we can't determine a frequency distribution for the unknown population. What we can try to do is to assign to the unknown population some **probability distributions**, that are mathematical models that we can't really observe, but that we inference on the empirical frequency distribution calculated on the sample set with a certain error.
+
+There are various possible probability distributions, both continuous and discrete: all of them are just models associated to an unknown population according to the data obtained by the sample set.
+
+What we can say is that probability and probability distributions are generalizations of the concepts of frequency and frequency distributions that work also for unknown populations we inference on.
 
 **References** \
 [1] [https://en.wikipedia.org/wiki/Descriptive_statistics](https://en.wikipedia.org/wiki/Descriptive_statistics) \
