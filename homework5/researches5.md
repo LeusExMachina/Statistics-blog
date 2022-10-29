@@ -31,7 +31,7 @@ Let's now focus on the **mean**, on its possible meanings, kinds, and derivation
 
 The arithmetic mean $\bar{x}$ of a set of values $x_1, x_2, ... , x_n$ is a single value that summarizes the entire set. The mean, in other words, is a single value that is representative of an entire set of values, and that allows us to represent that set with much more synthesis. Of course representing a set of values using their mean is an approximation, and an inevitable consequence is a loss of precision in our description. What we gain, otherwise, is a (more or less) representative synthesis of an entire set.
 
-The reliability of the arithmetic mean as a representation of a set of value can be extimated with another statistic, that is the **mean quadratic error**.
+The reliability of the arithmetic mean as a representation of a set of values can be extimated with another statistic, that is the **mean quadratic error**.
 
 The formula to obtain the arithmetic mean of a set of $n$ values is well known and is the following:
 
@@ -55,7 +55,7 @@ Hence, we derived the mean from this concept of a value that represents the set 
 
 - (2) The **arithmetic mean** of $n$ values is that value that equates all the positive and negative differences between the mean itself and the single values of the set.
 
-This second definition does not consider the sum of our $n$ values $x_1, x_2, ... , x_n$, but instead refers to the difference between each of those values and a value $c$. $c$ is the mean $\bar{x}$ if the sum of all those differences (both positive and negative) is $0$, and since all positive and negative differences are equated. Translating this intuition into formulas, we will have that:
+This second definition does not consider the sum of our $n$ values $x_1, x_2, ... , x_n$, but instead refers to the difference between each of those values and a value $c$. $c$ is the mean $\bar{x}$ if the sum of all those differences (both positive and negative) is $0$, and then all positive and negative differences are equated. Translating this intuition into formulas, we will have that:
 
 $$ \sum _{i=1}^{n}{(x_{i} - c)} $$
 
@@ -77,7 +77,7 @@ We can then see how we could derive the mean and its formula also from a differe
 
 - (3) The **arithmetic mean** of $n$ values is that value that, globally, minimizes the distance between itself and the values of the set
 
-The final definition of mean we consider refers to the intuitive notion of the average as that values that in in the "middle" of all the values that compose my set and that is closest to those values that appear more frequently in my sequence.
+The final definition of mean we consider refers to the intuitive notion of the average as that value that is in the "middle" of all the values that compose the set and that is closest to those values that appear more frequently in the sequence.
 
 If we formalize this concept, we can say that the mean is that value that minimizes the overall distance between itself and each value of the set. The overall distance is the following:
 
@@ -93,7 +93,9 @@ $$ s(c) = \sum_{i=1}^{n}{(x_i - c)^2} = $$
 
 $$= \sum_{i=1}^{n}{(x_i^2 - 2cx_i + c^2)} = $$
 
-$$= \sum_{i=1}^{n}{x_i^2} -\sum_{i=1}^{n}{2cx_i} + \sum_{i=1}^{n}{c^2}$$
+$$= \sum_{i=1}^{n}{x_i^2} -\sum_{i=1}^{n}{2cx_i} + \sum_{i=1}^{n}{c^2} = $$
+
+$$= \sum_{i=1}^{n}{x_i^2} -2c\sum_{i=1}^{n}{x_i} + nc^2$$
 
 If we differentiate this function on $c$ and then equate the derivative to $0$ in order to get the minimum we obtain:
 
@@ -134,6 +136,18 @@ Then if we formalize this:
 $$\bar{x}^n = \prod_{i=1}^{n}{x_i} => \bar{x} = \sqrt[n]{\prod_{i=1}^{n}{x_i}}$$
 
 We have that, so defined, $\bar{x}$ is the **geometric mean** of our numbers.
+
+If instead we want the value for which the sum of its reciprocal for $n$ times is identical to the sum of the reciprocals of the values of the set, we obtain the **harmonic mean**, defined as:
+
+$${\bar{x}} = n\left(\sum _{i=1}^{n}{\frac {1}{x_{i}}}\right)^{-1}$$
+
+#### Power mean
+
+Arithmetic, geometric and harmonic mean are all generalized under the concept of **power mean**, defined as follows:
+
+$$\bar{x}(m)=\left({\frac {1}{n}}\sum _{i=1}^{n}x_{i}^{m}\right)^{\frac {1}{m}}$$
+
+This is the power mean of order m. We can notice that if $m = 1$ we have the **arithmetic mean**, if $m = -1$ we have the **power mean**, while for $\lim{m \to 0}$ we have the **geometric mean**.
 
 **References** \
 [1] [https://en.wikipedia.org/wiki/Mean](https://en.wikipedia.org/wiki/Mean)
