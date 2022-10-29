@@ -150,5 +150,19 @@ $$\bar{x}(m)=\left({\frac {1}{n}}\sum _{i=1}^{n}x_{i}^{m}\right)^{\frac {1}{m}}$
 This is the power mean of order m. We can notice that if $m = 1$ we have the **arithmetic mean**, if $m = -1$ we have the **power mean**, while for $\lim{m \to 0}$ we have the **geometric mean**.
 
 **References** \
-[1] [https://en.wikipedia.org/wiki/Mean](https://en.wikipedia.org/wiki/Mean)
+[1] [https://en.wikipedia.org/wiki/Mean](https://en.wikipedia.org/wiki/Mean) \
 [2] [https://math.stackexchange.com/questions/2554243/understanding-the-mean-minimizes-the-mean-squared-error](https://math.stackexchange.com/questions/2554243/understanding-the-mean-minimizes-the-mean-squared-error)
+
+# Research 11 - Mathematical convergence and convergence in probability
+
+In progress...
+
+**References** \
+
+# Research 12 -  Descriptive Statistics and Inferential Statistics. The role of probability and probability distributions.
+
+
+
+**References** \
+[1] [https://en.wikipedia.org/wiki/Descriptive_statistics](https://en.wikipedia.org/wiki/Descriptive_statistics) \
+[2] [https://en.wikipedia.org/wiki/Statistical_inference](https://en.wikipedia.org/wiki/Statistical_inference)
