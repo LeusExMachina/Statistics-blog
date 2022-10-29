@@ -39,7 +39,7 @@ $$ \displaystyle{\bar{x}}={\frac {1}{n}}\left(\sum _{i=1}^{n}{x_{i}}\right)={\fr
 
 This formula can be derived by the various definitions we assign to the concept of mean. **Let's now consider some of them.**
 
-1. The **arithmetic mean** of $n$ values is that value that, if substituted to the values of the set, gives the same sum.
+- (1) The **arithmetic mean** of $n$ values is that value that, if substituted to the values of the set, gives the same sum.
 
 This first definition describes the arithmetic mean of a set of $n$ values $x_1, x_2, ... , x_n$ considering the sum of those values. The mean will be that number that, if substituted to each of the values in the sum, will give the same result:
 
@@ -53,7 +53,7 @@ $$ {\bar{x}}={\frac {1}{n}}\left(\sum _{i=1}^{n}{x_{i}}\right) $$
 
 Hence, we derived the mean from this concept of a value that represents the set in terms of equality of the sum. This is not the only possible derivation of the mean: we obtain the same value from other definitions.
 
-2.  The **arithmetic mean** of $n$ values is that value that equates all the positive and negative differences between the mean itself and the single values of the set.
+- (2) The **arithmetic mean** of $n$ values is that value that equates all the positive and negative differences between the mean itself and the single values of the set.
 
 This second definition does not consider the sum of our $n$ values $x_1, x_2, ... , x_n$, but instead refers to the difference between each of those values and a value $c$. $c$ is the mean $\bar{x}$ if the sum of all those differences (both positive and negative) is $0$, and since all positive and negative differences are equated. Translating this intuition into formulas, we will have that:
 
@@ -75,7 +75,7 @@ $$\bar{x} = \frac{1}{n}\left(\sum _{i=1}^{n}{x_{i}}\right)$$
 
 We can then see how we could derive the mean and its formula also from a different definition. This means that the same value $\bar{x}$, that is the arithmetic mean, can assume various meanings and represent the original set in various ways.
 
-3. The **arithmetic mean** of $n$ values is that value that, globally, minimizes the distance between itself and the values of the set
+- (3) The **arithmetic mean** of $n$ values is that value that, globally, minimizes the distance between itself and the values of the set
 
 The final definition of mean we consider refers to the intuitive notion of the average as that values that in in the "middle" of all the values that compose my set and that is closest to those values that appear more frequently in my sequence.
 
