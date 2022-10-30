@@ -175,11 +175,34 @@ This means that if the "sequence number" $n$ is large enough ($n>n_0$), then we 
 
 Let's now consider a stochastic process. A stochastic process is a so called sequence of random variables $\\{X_n\\}$: we have a sequence of $n$ experiments and each of them is a random variable $\\{X_i\\}$. An example of a stochastic process is a sequence of coin tosses: each toss is a random variable, that can assume the value "head" with probability $p$ or the value "tail" with probability $1-p$.
 
-Another example of sequence of random variables $\{X_n\}$, considering the same situation of the previous example of coin tosses, is the sequence $\{X_n\}$ where $\{X_i\}$ is the 
+Another example of sequence of random variables $\\{X_n\\}$, considering the same situation of the previous example of coin tosses, is the sequence $\\{X_n\\}$ where $\\{X_i\\}$ is the relative frequency of "heads" at the $i$-th toss.
+
+What we would like to do is to define a concept of convergence for sequences of random variables, as we did for sequences of real numbers. We would then like to define someway that the sequence of random variables $\\{X_n\\}$ converges to a certain random variable $X$ if $n$ is large enough. The problem in doing this is that while real number sequencies are deterministic, and then we can be sure that their value will remain bounded to a certain interval if $n$ is large enough, we can't say the same for sequences of random variables: each random variable, in fact, assumes a random value with a certain probability and we can't be sure that this value will stay bounded inside a certain interval for each $n > n_0$
+
+However, we can express a concept of convergence first of all defining a concept of "distance" between random variables. Given two random variables $X$ and $X_n$ we will consider $X$ close to $X_n$ if:
+
+$$|X-X_n|<\varepsilon$$
+
+Once defined this concept, we can say that the probability that two random variables are close is:
+
+$$Pr[|X-X_n|<\varepsilon]$$
+
+Having defined those concepts, we can define convergence in probability of a sequence of random variables saying that if $\\{X_n\\}$ converges to X, the probability that $X_n$ and $X$ are close should become greater and greater as n increases:
+
+$$\lim_{n\to+\infty}\ Pr[|X_n - X|<\varepsilon] = 1$$
+
+Formally, we will have that given $\varepsilon > 0$, $\delta > 0$ there is an $n_0$ such that $\forall n > n_0$:
+
+$$Pr[|X-X_n|<\varepsilon]> 1- \delta$$
+
+This means that although we can't be sure that the value assumed by $X_n$ will remain bounded if $n$ is large enough, we can say that the probability for $X_n$ and $X$ to be close grows as $n$ increases and, if $n$ is infinite, this probability will eventually become $1$.
+
+So, even for a very large $n$, there's always the possibility that $X_n$ will assume a value that is far from $X$, so it's always possible for finite $n$ that $|X-X_n|>\varepsilon$. Neverthless, the probability of this happening decreases as $n$ increases and, for infinite $n$, it will eventually become $0$.
 
 **References** \
 [1] [https://www.statlect.com/asymptotic-theory/sequences-of-random-variables](https://www.statlect.com/asymptotic-theory/sequences-of-random-variables) \
-[2] [https://www.statlect.com/asymptotic-theory/convergence-in-probability#:~:text=The%20concept%20of%20convergence%20in,their%20difference%20is%20very%20small](https://www.statlect.com/asymptotic-theory/convergence-in-probability#:~:text=The%20concept%20of%20convergence%20in,their%20difference%20is%20very%20small)
+[2] [https://www.statlect.com/asymptotic-theory/convergence-in-probability#:~:text=The%20concept%20of%20convergence%20in,their%20difference%20is%20very%20small](https://www.statlect.com/asymptotic-theory/convergence-in-probability#:~:text=The%20concept%20of%20convergence%20in,their%20difference%20is%20very%20small) \
+[3] [https://it.wikipedia.org/wiki/Convergenza_di_variabili_casuali](https://it.wikipedia.org/wiki/Convergenza_di_variabili_casuali)
 
 # Research 12 -  Descriptive Statistics and Inferential Statistics. The role of probability and probability distributions.
 
