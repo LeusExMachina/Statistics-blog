@@ -155,9 +155,29 @@ This is the power mean of order m. We can notice that if $m = 1$ we have the **a
 
 # Research 11 - Mathematical convergence and convergence in probability
 
-In progress...
+### Limit of a real function $f(x)$ and convergence of a sequence $f(n)$
 
-**References**
+In mathematical analysis, a limit is the value that a function $y = f(x)$ approaches as the input $x$ approaches some value. The definition of limit slightly varies if the limit is finite or infinite, and if the input tends to a finite or an infinite value. Since we are interested in analyzing the differences between the mathematical convergence and the convergence in probability, let's consider the case of a finite limit for $x$ that goes to the infinite (that is the definition of convergence).
+
+We say that $\lim_{x\to+\infty}f(x)=c$ if:
+
+$$ \forall\varepsilon>0\ \exists \delta>0 \ such\ that\ if\ x > \delta\ then\ \left|f(x)-c\right|<\varepsilon$$
+
+This means that if the input $x$ is large enough (larger that a certain $\delta$), we are **sure** that the output $y = f(x)$ will remain bounded inside a certain interval of center $c$, and that will stay inside this interval forever (for each $x > \delta$).
+
+The same concept can be expressed, instead that for a function of real numbers, for a sequence of real numbers $y = f(n)$. We say that $\lim_{n\to+\infty}f(n)=c$ if:
+
+$$ \forall\varepsilon>0\ \exists n_0 \in \mathbb{N} \ such\ that\ \left|f(n)-c\right|<\varepsilon\ for\ each\ n>n_0$$
+
+This means that if the "sequence number" $n$ is large enough ($n>n_0$), then we are **sure** the values of our succession will remain bounded forever inside an interval of center $c$.
+
+### Convergence in probability
+
+Let's now consider a stochastic process. A stochastic process is a so called sequence of random variables $\{X_n\}$: we have a sequence of $n$ experiments and each of them is a random variable $\{X_i\}$
+
+**References** \
+[1] [https://www.statlect.com/asymptotic-theory/sequences-of-random-variables](https://www.statlect.com/asymptotic-theory/sequences-of-random-variables) \
+[2] [https://www.statlect.com/asymptotic-theory/convergence-in-probability#:~:text=The%20concept%20of%20convergence%20in,their%20difference%20is%20very%20small](https://www.statlect.com/asymptotic-theory/convergence-in-probability#:~:text=The%20concept%20of%20convergence%20in,their%20difference%20is%20very%20small)
 
 # Research 12 -  Descriptive Statistics and Inferential Statistics. The role of probability and probability distributions.
 
