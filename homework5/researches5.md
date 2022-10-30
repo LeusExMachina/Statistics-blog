@@ -197,7 +197,9 @@ $$Pr[|X-X_n|<\varepsilon]> 1- \delta$$
 
 This means that although we can't be sure that the value assumed by $X_n$ will remain bounded if $n$ is large enough, we can say that the probability for $X_n$ and $X$ to be close grows as $n$ increases and, if $n$ is infinite, this probability will eventually become $1$.
 
-So, even for a very large $n$, there's always the possibility that $X_n$ will assume a value that is far from $X$: in other words, it's always possible for finite $n$ that $|X-X_n|>\varepsilon$. Neverthless, the probability of this happening decreases as $n$ increases and, for infinite $n$, it will eventually become $0$.
+So, even for a very large $n$, there's always the possibility that $X_n$ will assume a value that is far from $X$: in other words, it's always possible for finite $n$ that $|X-X_n|>\varepsilon$.
+
+Neverthless, the probability of this happening decreases as $n$ increases and, for infinite $n$, it will eventually become $0$.
 
 **References** \
 [1] [https://www.statlect.com/asymptotic-theory/sequences-of-random-variables](https://www.statlect.com/asymptotic-theory/sequences-of-random-variables) \
