@@ -173,7 +173,9 @@ This means that if the "sequence number" $n$ is large enough ($n>n_0$), then we 
 
 ### Convergence in probability
 
-Let's now consider a stochastic process. A stochastic process is a so called sequence of random variables $\{X_n\}$: we have a sequence of $n$ experiments and each of them is a random variable $\{X_i\}$
+Let's now consider a stochastic process. A stochastic process is a so called sequence of random variables $\\{X_n\\}$: we have a sequence of $n$ experiments and each of them is a random variable $\\{X_i\\}$. An example of a stochastic process is a sequence of coin tosses: each toss is a random variable, that can assume the value "head" with probability $p$ or the value "tail" with probability $1-p$.
+
+Another example of sequence of random variables $\{X_n\}$, considering the same situation of the previous example of coin tosses, is the sequence $\{X_n\}$ where $\{X_i\}$ is the 
 
 **References** \
 [1] [https://www.statlect.com/asymptotic-theory/sequences-of-random-variables](https://www.statlect.com/asymptotic-theory/sequences-of-random-variables) \
