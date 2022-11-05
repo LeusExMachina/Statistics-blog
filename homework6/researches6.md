@@ -19,7 +19,7 @@ In descriptive and inferential Statistics, while the concept of population stays
 
 In **descriptive Statistics**, the population that we are interested to study is well known. So the purpose of descriptive Statistics, as the name itself says, is to produce informations that describe and summarize the features of this known population.
 
-In **statistical inference**, instead, the population is unknown. We have instead access to one (or more tha one) sample of the population, and the purpose of the discipline is to infer informations about the larger population starting from the sample.
+In **statistical inference**, instead, the population is unknown. We have instead access to one (or more than one) sample of the population, and the purpose of the discipline is to infer informations about the larger population starting from the sample.
 
 One of the most important instruments used by inferential Statistics is the concept of **sampling distribution**.
 
@@ -35,7 +35,7 @@ $$\{X_i\}_n = \{X_1, X_2, ... , X_n\}$$
 
 Each random variable $X_i$ is basically a copy of the random variable $X$, since each element of the sample belongs to the population, and then each $X_i$ and $X$ are identically distributed.
 
-Informally, we could think to each $X_i$ as an observation on the population "immediatly before" that the observation actually happens, and so $X_i$ can assume all the values that $X$ can assume. Hence, the set of random variables $\\{X_i\\}_n$ represents any possible random sample, and then any possible subset of size n of the population.
+Informally, we could think to each $X_i$ as an observation on the population "immediately before" that the observation actually happens, and so $X_i$ can assume all the values that $X$ can assume. Hence, the set of random variables $\\{X_i\\}_n$ represents any possible random sample, and then any possible subset of size $n$ of the population (with repetitions, meaning that an element can appear more that once in a subset).
 
 Given the $n$ random variables from a random sample, we can draw a statistic out of them: for example we could be interested in computing the mean of the random sample. Doing so, we will produce another random variable, called **sample mean**, defined as:
 
