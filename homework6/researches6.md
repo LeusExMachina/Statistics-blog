@@ -43,7 +43,7 @@ $$\bar{X} = \dfrac{X_1 + X_2 + ... + X_n}{n}$$
 
 This new random variable "sample mean" will assume different values according to the values assumed by the random variables $X_1, X_2, ... , X_n$ that compose it. This means that the values that the sample mean $\bar{X}$ can assume are all the possible means of all the possible samples of size $n$ of the population.
 
-As a random variable, $\bar{X}$ will have a probability distribution that assigns a probability to each value that $\bar{X}$ can assume: in fact, given an arbitrarily large number of samples, we will have that the mean of each sample will match some values more often than others, and therefore we can draw a probability distribution. This distribution will be a **sampling distribution**, since it's the probability distribution of all the values that the statistic "mean" can assume given an arbitrarily large number os samples of size $n$, and tells us the probability of the mean to assume a certain value for a generic random sample of the population.
+As a random variable, $\bar{X}$ will have a probability distribution that assigns a probability to each value that $\bar{X}$ can assume: in fact, given an arbitrarily large number of samples, we will have that the mean of each sample will match some values more often than others, and therefore we can draw a probability distribution. This distribution will be a **sampling distribution**, since it's the probability distribution of all the values that the statistic "mean" can assume given an arbitrarily large number of samples of size $n$, and tells us the probability of the mean to assume a certain value for a generic random sample of the population.
 
 Another example can be the **sample variance**: given our set $\\{X_i\\}_n$, we can define the sample variance as:
 
@@ -60,6 +60,60 @@ Very often, it's impossible to calculate the sampling probability distribution o
 
 # Research 14 - Expected value and Variance of the Sample Mean and of the Sample Variance
 
-in progress...
+Given a certain population, modeled through a random variable $X$, we have seen in the previous research that we can compute the so called **Sample Mean** and the **Sample Variance** from a random sample of the population $\\{X_i\\}_n$.
 
-**References**
+Since the sample mean and the sample variance are theirselves two random variables, we can compute their **expected value** (that is a generalization of the concept of mean for probaility distributions) and **variance** (that is a generalization for probability distributions of the concept of variance that already exists for frequency distributions).
+
+## Sample mean
+
+As we saw in the previous research, given a random sample of the population $\\{X_i\\}_n$, the sample mean is defined as:
+
+$$\bar{X} = \dfrac{X_1 + X_2 + ... + X_n}{n}$$
+
+We want now to compute the expected value and the variance of the new random variable so defined. To do so, we will use the properties of the operators.
+
+#### Expected value
+
+$$E(\bar{X}) = E(\dfrac{X_1 + X_2 + ... + X_n}{n})$$
+
+Then, since for the properties of the expected value $E(aX) = aE(X)$, we will have:
+
+$$E(\bar{X}) = \dfrac{1}{n}[E(X_1 + X_2 + ... + X_n)]$$
+
+Again, for the properties of the expected value we have that $E(X + Y) = E(X)+E(Y)$. Then, we can write:
+
+$$E(\bar{X}) = \dfrac{1}{n}[E(X_1 + X_2 + ... + X_n)] =$$
+
+$$= \dfrac{1}{n}[E(X_1) + E(X_2) + ... + E(X_n)]$$
+
+Since $X_1, X_2, ... , X_n$ are independent and identically distributed, with the same distribution of the population $X$, if we call $E(X) = \mu$ the expected value of the population, we will have that:
+
+$$E(\bar{X}) = \dfrac{1}{n}[E(X_1) + E(X_2) + ... + E(X_n)] = $$
+
+$$\dfrac{1}{n}[nE(X)] = \dfrac{1}{n}[n\mu] = \mu$$
+
+So we can see how the expected value of the sample mean matches with the expected value of the population.
+
+#### Variance
+
+$$Var(\bar{X}) = Var(\dfrac{X_1 + X_2 + ... + X_n}{n})$$
+
+Since for the properties of variance $Var(aX) = a^2Var(X)$, then we can write:
+
+$$Var(\bar{X}) = Var(\dfrac{X_1 + X_2 + ... + X_n}{n}) = $$
+$$= \dfrac{1}{n^2}[Var(X_1 + X_2 + ... + X_n)]$$
+
+Now, the properties of the variance tell us that $Var(X + Y) = Var(X) + Var(Y) + 2Cov(X,Y)$, where $Cov(X,Y)$ is the covariance of $X$ and $Y$. But $Cov(X,Y) = 0$ if $X$ and $Y$ are independent, and so for independent random variables $Var(X + Y) = Var(X) + Var(Y)$. Since $X_1, X_2, ... , X_n$ are independent, we wil have that:
+
+$$Var(\bar{X}) = dfrac{1}{n^2}[Var(X_1 + X_2 + ... + X_n)] =$$
+$$ = \dfrac{1}{n^2}[Var(X_1) + Var(X_2) + ... + Var(X_n)]$$
+
+Since $X_1, X_2, ... , X_n$ are identically distributed and with the same distribution of the population $X$, calling $Var(X) = \sigma^2$ the variance of the entire population, we will have that:
+
+$$Var(\bar{X}) = \dfrac{1}{n^2}[Var(X_1) + Var(X_2) + ... + Var(X_n)] = $$
+$$ = \dfrac{1}{n^2}[nVar(X)] = \dfrac{1}{n^2}[n\sigma^2] = \dfrac{\sigma^2}{n}$$
+
+We can then notice that while the expected value of the sample mean is identical to the expected value of the population, the variance of the sample mean is the variance of the population divided by the sample size.
+
+**References** \
+[1] [https://online.stat.psu.edu/stat414/lesson/24/24.4](https://online.stat.psu.edu/stat414/lesson/24/24.4)
