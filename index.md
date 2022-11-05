@@ -12,3 +12,5 @@
 # [Homework 4](https://leusexmachina.github.io/StatisticsHomework/homework4)
 
 # [Homework 5](https://leusexmachina.github.io/StatisticsHomework/homework5)
+
+# [Homework 6](https://leusexmachina.github.io/StatisticsHomework/homework6)

@@ -187,7 +187,7 @@ Once defined this concept, we can say that the probability that two random varia
 
 $$Pr[|X-X_n|<\varepsilon]$$
 
-Having defined those concepts, we can define convergence in probability of a sequence of random variables saying that if $\\{X_n\\}$ converges to X, the probability that $X_n$ and $X$ are close should become greater and greater as n increases:
+Having defined those concepts, we can define convergence in probability of a sequence of random variables saying that if $\\{X_n\\}$ converges to $X$, the probability that $X_n$ and $X$ are close should become greater and greater as n increases:
 
 $$\lim_{n\to+\infty}\ Pr[|X_n - X|<\varepsilon] = 1$$
 
