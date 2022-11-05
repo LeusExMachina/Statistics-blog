@@ -47,7 +47,7 @@ As a random variable, $\bar{X}$ will have a probability distribution that assign
 
 Another example can be the **sample variance**: given our set $\\{X_i\\}_n$, we can define the sample variance as:
 
-$$S^2 = \dfrac{1}{n}(\sum_{i=1}^{n}(X_i - \bar{X}))$$
+$$S^2 = \dfrac{1}{n}\sum_{i=1}^{n}(X_i - \bar{X})^2$$
 
 Again, $S^2$ is a random variable that will assume as values all the possible variances of all the possible samples of size $n$. The probability distribution of $S^2$, that tells us with how much probability $S^2$ will assume one of those values, will be another **sampling distribution**.
 
@@ -74,11 +74,11 @@ We want now to compute the expected value and the variance of the new random var
 
 #### Expected value
 
-$$E(\bar{X}) = E(\dfrac{X_1 + X_2 + ... + X_n}{n})$$
+$$E(\bar{X}) = E\left(\dfrac{X_1 + X_2 + ... + X_n}{n}\right)$$
 
 Then, since for the properties of the expected value $E(aX) = aE(X)$, we will have:
 
-$$E(\bar{X}) = \dfrac{1}{n}[E(X_1 + X_2 + ... + X_n)]$$
+$$E(\bar{X}) = \dfrac{1}{n} \left[E(X_1 + X_2 + ... + X_n)\right]$$
 
 Again, for the properties of the expected value we have that $E(X + Y) = E(X)+E(Y)$. Then, we can write:
 
@@ -96,16 +96,16 @@ So we can see how the expected value of the sample mean matches with the expecte
 
 #### Variance
 
-$$Var(\bar{X}) = Var(\dfrac{X_1 + X_2 + ... + X_n}{n})$$
+$$Var(\bar{X}) = Var\left(\dfrac{X_1 + X_2 + ... + X_n}{n}\right)$$
 
 Since for the properties of variance $Var(aX) = a^2Var(X)$, then we can write:
 
-$$Var(\bar{X}) = Var(\dfrac{X_1 + X_2 + ... + X_n}{n}) = $$
+$$Var(\bar{X}) = Var\left(\dfrac{X_1 + X_2 + ... + X_n}{n}\right) = $$
 $$= \dfrac{1}{n^2}[Var(X_1 + X_2 + ... + X_n)]$$
 
 Now, the properties of the variance tell us that $Var(X + Y) = Var(X) + Var(Y) + 2Cov(X,Y)$, where $Cov(X,Y)$ is the covariance of $X$ and $Y$. But $Cov(X,Y) = 0$ if $X$ and $Y$ are independent, and so for independent random variables $Var(X + Y) = Var(X) + Var(Y)$. Since $X_1, X_2, ... , X_n$ are independent, we wil have that:
 
-$$Var(\bar{X}) = dfrac{1}{n^2}[Var(X_1 + X_2 + ... + X_n)] =$$
+$$Var(\bar{X}) = \dfrac{1}{n^2}[Var(X_1 + X_2 + ... + X_n)] =$$
 $$ = \dfrac{1}{n^2}[Var(X_1) + Var(X_2) + ... + Var(X_n)]$$
 
 Since $X_1, X_2, ... , X_n$ are identically distributed and with the same distribution of the population $X$, calling $Var(X) = \sigma^2$ the variance of the entire population, we will have that:
@@ -115,5 +115,37 @@ $$ = \dfrac{1}{n^2}[nVar(X)] = \dfrac{1}{n^2}[n\sigma^2] = \dfrac{\sigma^2}{n}$$
 
 We can then notice that while the expected value of the sample mean is identical to the expected value of the population, the variance of the sample mean is the variance of the population divided by the sample size.
 
+## Sample variance
+
+As for the sample mean, we can define the sample variance as a new random variable from a random sample $\\{X_i\\}_n$ of the population $X$. In particular, the sample variance is defined as:
+
+$$S^2 = \dfrac{1}{n}\sum_{i=1}^{n}(X_i - \bar{X})^2$$
+
+We now want to compute expected value and variance of this new random variable.
+
+#### Expected value
+
+It is possible to prove (the proof will be omitted) that the expected value of $S^2$ is:
+
+$$E(S^2) = E \left(\dfrac{1}{n}\sum_{i=1}^{n}(X_i - \bar{X})^2\right) = \dfrac{n-1}{n}\sigma^2$$
+
+Where $\sigma^2$ is the variance of the population $X$. Hence, the expected value of the sample variance underextimates the variance of the population, since $\dfrac{n-1}{n} < 1$. For this reason, the so defined $S^2$ is also called **biased sample variance**. In order to have a perfect extimations, it's often used the **unbiased sample variance**, that is defined as:
+
+$$S^2 = \dfrac{1}{n-1}\sum_{i=1}^{n}(X_i - \bar{X})^2$$
+
+In this case, we have that $E(S^2) = \sigma^2$, then the expected value of the sample variance perfectly extimates the variance of the entire population.
+
+#### Variance
+
+Again, it is possible to prove that the variance of the sample variance (biased) is the following:
+
+$$Var(S^2)={\dfrac{\mu_4}{n}}-{\dfrac{\sigma^4\,(n-3)}{n\,(n-1)}}$$
+
+Where $\mu_4$ is the fourth central moment of $X$, defined as:
+
+$$\mu_4 = E[(X-\mu)^4]$$
+
 **References** \
-[1] [https://online.stat.psu.edu/stat414/lesson/24/24.4](https://online.stat.psu.edu/stat414/lesson/24/24.4)
+[1] [https://online.stat.psu.edu/stat414/lesson/24/24.4](https://online.stat.psu.edu/stat414/lesson/24/24.4) \
+[2] [https://en.wikipedia.org/wiki/Variance](https://en.wikipedia.org/wiki/Variance) \
+[3] [https://math.stackexchange.com/questions/72975/variance-of-sample-variance](https://math.stackexchange.com/questions/72975/variance-of-sample-variance)
