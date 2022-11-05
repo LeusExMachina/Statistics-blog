@@ -100,17 +100,20 @@ $$Var(\bar{X}) = Var\left(\dfrac{X_1 + X_2 + ... + X_n}{n}\right)$$
 
 Since for the properties of variance $Var(aX) = a^2Var(X)$, then we can write:
 
-$$Var(\bar{X}) = Var\left(\dfrac{X_1 + X_2 + ... + X_n}{n}\right) = $$
-$$= \dfrac{1}{n^2}[Var(X_1 + X_2 + ... + X_n)]$$
+$$ Var(\bar{X}) = Var\left(\dfrac{X_1 + X_2 + ... + X_n}{n}\right) = $$
+
+$$ = \dfrac{1}{n^2}[Var(X_1 + X_2 + ... + X_n)]$$
 
 Now, the properties of the variance tell us that $Var(X + Y) = Var(X) + Var(Y) + 2Cov(X,Y)$, where $Cov(X,Y)$ is the covariance of $X$ and $Y$. But $Cov(X,Y) = 0$ if $X$ and $Y$ are independent, and so for independent random variables $Var(X + Y) = Var(X) + Var(Y)$. Since $X_1, X_2, ... , X_n$ are independent, we wil have that:
 
 $$Var(\bar{X}) = \dfrac{1}{n^2}[Var(X_1 + X_2 + ... + X_n)] =$$
+
 $$ = \dfrac{1}{n^2}[Var(X_1) + Var(X_2) + ... + Var(X_n)]$$
 
 Since $X_1, X_2, ... , X_n$ are identically distributed and with the same distribution of the population $X$, calling $Var(X) = \sigma^2$ the variance of the entire population, we will have that:
 
 $$Var(\bar{X}) = \dfrac{1}{n^2}[Var(X_1) + Var(X_2) + ... + Var(X_n)] = $$
+
 $$ = \dfrac{1}{n^2}[nVar(X)] = \dfrac{1}{n^2}[n\sigma^2] = \dfrac{\sigma^2}{n}$$
 
 We can then notice that while the expected value of the sample mean is identical to the expected value of the population, the variance of the sample mean is the variance of the population divided by the sample size.
