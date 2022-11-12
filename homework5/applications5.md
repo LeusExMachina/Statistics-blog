@@ -150,7 +150,7 @@ private void timer1_Tick(object sender, EventArgs e)
 
 ## Charts
 
-[Click here](https://drive.google.com/uc?export=download&id=1Zfd9CZBWDGr2qAUQZ3Dqy7wg9SjwV8Rk) to download the application.
+[Click here](https://drive.google.com/uc?export=download&id=1cPOKvc9RAf6oYuBhIcLojMPqTTgETIwg) to download the application.
 
 A video of the application can be watched down below:
 

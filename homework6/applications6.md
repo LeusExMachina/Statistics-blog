@@ -10,7 +10,7 @@
 </script>
 # Application 10 - sample mean and sample variance
 
-[Click here](https://drive.google.com/uc?export=download&id=1asQfDrQQj5iYj13H1Ve_e_MEtgS2iMHM) to download the application.
+[Click here](https://drive.google.com/uc?export=download&id=1bpyetax8S8JL8nfKXZRRbPQYdJTYRltW) to download the application.
 
 A video of the application can be watched down below:
 
