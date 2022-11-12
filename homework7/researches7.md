@@ -103,7 +103,7 @@ But this is exactly the definition of convergence in probability: we have that f
 
 $$\bar{X}_n \rightarrow 0 \text{  when  } n \rightarrow +\infty$$
 
-This result is called **weak law of large numbers**. prova 5
+This result is called **weak law of large numbers**.
 
 **References** \
 [1] [https://en.wikipedia.org/wiki/Markov%27s_inequality](https://en.wikipedia.org/wiki/Markov%27s_inequality) \
