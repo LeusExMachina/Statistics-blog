@@ -25,7 +25,7 @@ The Markov inequality states that given any non-negative random variable $X$ and
 
 $$\operatorname {P} (X\geq a)\leq {\frac {\operatorname {E} (X)}{a}}$$
 
-Let's prove the inequality. Given a non-negative random variable $X$, the espected value $E(X)$ is defined as:
+Let's prove the inequality. Given a non-negative random variable $X$, the espected value $\operatorname{E}(X)$ is defined as:
 
 $${\operatorname {E} (X)=\int _{-\infty }^{+\infty }xf(x)\,dx}$$
 
@@ -95,7 +95,7 @@ But knowing expected value and variance of the sample mean, we can rewrite:
 
 $${\operatorname {P} (|\bar{X}-\mu|\geq a)\leq {\frac {\sigma^2}{na^{2}}}}$$
 
-But then, if the number of samples we take for the sample mean is arbitrarily large, meaning that $n \rightarrow +\infty$, we will have that:
+Then, if the number of samples we take for the sample mean is arbitrarily large, meaning that $n \rightarrow +\infty$, we will have that:
 
 $${\operatorname {P} (|\bar{X}-\mu|\geq a) \rightarrow 0}$$
 
