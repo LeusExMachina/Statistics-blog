@@ -75,7 +75,7 @@ The Chebyshev inequality is a result that immediately follows from the Markov in
 
 $${\operatorname {P} (|X-\operatorname {E} (X)|\geq a)\leq {\frac {\operatorname {Var} (X)}{a^{2}}}}$$
 
-The proof easily follows from the Markov inequality. In fact, if $X$ is a random variable, then $|X-\operatorname {E} (X)|^2$ is a non-negative random variable. Hence, for this new random variable the Markov inequality is valid and then $\forall A > 0$:
+The proof easily follows from the Markov inequality. In fact, if $X$ is a random variable, then  is a non-negative random variable. Hence, for this new random variable the Markov inequality is valid and then $\forall A > 0$:
 
 $${\operatorname {P} (|X-\operatorname {E} (X)|^2\geq A)\leq \frac{\operatorname {E} (|X-\operatorname {E} (X)|^2)}{A}}$$
 
