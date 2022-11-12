@@ -101,7 +101,7 @@ $${\operatorname {P} (|\bar{X}-\mu|\geq a) \rightarrow 0}$$
 
 But this is exactly the definition of convergence in probability: we have that for $n \rightarrow +\infty$, the sample mean $\bar{X}$ converges in probability to the expected value $\mu$.
 
-$${{\bar{X}}_{n}\ {\xrightarrow {P}}\ \mu \qquad {\textrm {when}}\ n\to \infty .\\{}}$$
+$${{\bar{X}}_{n}\ \rightarrow\ \mu \qquad {\textrm {when}}\ n\to \infty}$$
 
 This result is called **weak law of large numbers**.
 
