@@ -87,7 +87,23 @@ That is the Chebyshev inequality.
 
 ### Law of large numbers
 
-Let's consider now any random variable $X$. In [research 13](https://leusexmachina.github.io/StatisticsHomework/homework6/researches6), we have seen the concept of sample mean $\bar{X}$ from the random variable $X$
+Let's consider now any random variable $X$. In [research 13](https://leusexmachina.github.io/StatisticsHomework/homework6/researches6), we have seen the concept of sample mean $\bar{X}$ from the random variable $X$. We have also seen that the expected value $\operatorname {E}(\bar{X})$ is equal to the expected value $\operatorname {E}(X) = \mu$, while the variance $\operatorname{Var} (\bar{X}) = \dfrac{\sigma^2}{n}$, where $\sigma^2 = \operatorname{Var} (X)$. By the Chebyshev inequality:
+
+$${\operatorname {P} (|\bar{X}-\operatorname {E} (\bar{X})|\geq a)\leq {\frac {\operatorname {Var} (\bar{X})}{a^{2}}}}$$
+
+But knowing expected value and variance of the sample mean, we can rewrite:
+
+$${\operatorname {P} (|\bar{X}-\mu|\geq a)\leq {\frac {\sigma^2}{na^{2}}}}$$
+
+But then, if the number of samples we take for the sample mean is arbitrarily large, meaning that $n \rightarrow +\infty$, we will have that:
+
+$${\operatorname {P} (|\bar{X}-\mu|\geq a) \rightarrow 0}$$
+
+But this is exactly the definition of convergence in probability: we have that for $n \rightarrow +\infty$, the sample mean $\bar{X}$ converges in probability to the expected value $\mu$.
+
+$${{\bar{X}}_{n}\ {\xrightarrow {P}}\ \mu \qquad {\textrm {when}}\ n\to \infty .\\{}}$$
+
+This result is called **weak law of large numbers**.
 
 **References** \
 [1] [https://en.wikipedia.org/wiki/Markov%27s_inequality](https://en.wikipedia.org/wiki/Markov%27s_inequality) \
