@@ -23,7 +23,7 @@ $${\mathbf {1} _{\mathbb {Q} }(x)={\begin{cases}1&x\in \mathbb {Q} \\0&x\notin \
 
 This function is nowhere continuous and so can't be integrated under Riemann definition. Henri Lebesgue expanded the definition of integration in order to integrate also more complex functions: for example, the above Dirichlet function can be integrated with the Lebesgue integrals.
 
-### Intuition behind Lebesgue integrals [1](https://en.wikipedia.org/wiki/Lebesgue_integration)
+### Intuition behind Lebesgue integrals [1](https://en.wikipedia.org/wiki/Lebesgue_integration#Intuitive_interpretation)
 
 Let's now see the difference between Riemann integrals and Lebesgue integrals from an intuitive point of view.
 
@@ -39,7 +39,7 @@ The Lebesgue integral may then be defined by adding up the areas of these horizo
 
 In order to formalize the Lebesgue integration, we need some preliminary concepts like the concepts of outer measure, Lebesgue measure, and Lebesgue-measurable functions. Let's describe all of them.
 
-#### Outer measure [2](https://en.wikipedia.org/wiki/Outer_measure)
+#### Outer measure [2](https://en.wikipedia.org/wiki/Outer_measure#Outer_measures)
 
 In the mathematical field of measure theory, an outer measure or exterior measure is a function defined on all subsets of a given set with values in the extended real numbers satisfying some additional technical conditions.
 
@@ -57,7 +57,7 @@ such that:
 
 $${\mu \left(\bigcup _{j=1}^{\infty }B_{j}\right)\leq \sum _{j=1}^{\infty }\mu (B_{j}).}$$
 
-#### Lebesgue measure [3](https://en.wikipedia.org/wiki/Lebesgue_measure)
+#### Lebesgue measure [3](https://en.wikipedia.org/wiki/Lebesgue_measure#Definition)
 
 Now that we have defined what a generic outer measure is, we can define the Lebesgue measure, that is based upon the Lebesgue outer measure. The Lebesgue measure is the standard way of assigning a measure to subsets of $n$-dimensional Euclidean space. For n = 1, 2, or 3, it coincides with the standard measure of length, area, or volume.
 
@@ -75,7 +75,7 @@ The set of all such $E$ forms a $\sigma$-algebra. For any such $E$, its Lebesgue
 
 A set $E$ that does not satisfy the Carathéodory criterion is not Lebesgue-measurable. Non-measurable sets do exist; an example is the Vitali sets.
 
-#### Lebesgue-measurable functions [1](https://en.wikipedia.org/wiki/Lebesgue_integration)
+#### Lebesgue-measurable functions [1](https://en.wikipedia.org/wiki/Lebesgue_integration#Measurable_functions)
 
 We start with a measure space $(E, X, \mu)$ where $E$ is a set, $X$ is a $\sigma$-algebra of subsets of $E$, and $\mu$ is a (non-negative) measure on $E$ defined on the sets of $X$.
 
@@ -95,7 +95,7 @@ $${\sup _{k\in \mathbb {N} }f_{k},\quad \liminf _{k\in \mathbb {N} }f_{k},\quad 
 
 are measurable if the original sequence $(f_k)_k$, where $k \in \mathbb{N}$, consists of measurable functions.
 
-#### Lebesgue integral definition [1](https://en.wikipedia.org/wiki/Lebesgue_integration), [4](https://it.wikipedia.org/wiki/Integrale_di_Lebesgue#Funzioni_misurabili)
+#### Lebesgue integral definition [1](https://en.wikipedia.org/wiki/Lebesgue_integration#Via_simple_functions), [4](https://it.wikipedia.org/wiki/Integrale_di_Lebesgue#Funzioni_semplici)
 
 Now that we have formalized all those previous concepts, we can proceed with the definition of the Lebesgue integrals. The following that is reported is the definition via simple functions. A simple function is a finite linear combination of indicator functions of measurable sets.
 
@@ -113,7 +113,17 @@ A simple function is, as we said, a finite linear combination of indicator funct
 
 $${s(x)=\sum _{i=1}^{n}a_{i}{\mathbf {1} }_{A_{i}}(x)}$$
 
-Where ${\mathbf {1} }_{A_{i}}(x)$ is the indicator function for each $A_i,\quad i = {1,...,n}$
+Where ${\mathbf {1} }_{A_{i}}(x)$ is the indicator function for each $A_i,\quad i = {1,...,n}$. For such a function, the Lebesgue integral on a set $F \in X$ is defined as:
+
+$${\int _{F}s\,d\mu =\sum _{i=1}^{n}a_{i}\mu (A_{i}\cap F),\quad F\in X}$$
+
+Finally we can define the Lebesgue integral for generic functions $f$. In particular, if $f:E \to \mathbb{R}^{*}$ is a non-negative function, the Lebesgue integral of $f$ over a certain measurable set $F$ is defined as:
+
+$${\int _{F}f\,d\mu :=\sup \int _{F}s\,d\mu ,}$$
+
+where the supremum is evaluated considering all the simple functions $s$ such that $0\leq s\leq f$. The value of the integral is a number in the interval ${[0,+\infty ]}$.
+
+Note that $\mathbb{R}^{*}$ is the extended real set, defined as $\mathbb{R} \cup (-\infty; +\infty)$.
 
 
 
@@ -121,7 +131,7 @@ Where ${\mathbf {1} }_{A_{i}}(x)$ is the indicator function for each $A_i,\quad 
 [1] [https://en.wikipedia.org/wiki/Lebesgue_integration](https://en.wikipedia.org/wiki/Lebesgue_integration) \
 [2] [https://en.wikipedia.org/wiki/Outer_measure](https://en.wikipedia.org/wiki/Outer_measure) \
 [3] [https://en.wikipedia.org/wiki/Lebesgue_measure](https://en.wikipedia.org/wiki/Lebesgue_measure) \
-[4] [https://it.wikipedia.org/wiki/Integrale_di_Lebesgue#Funzioni_misurabili](https://it.wikipedia.org/wiki/Integrale_di_Lebesgue#Funzioni_misurabili)
+[4] [https://it.wikipedia.org/wiki/Integrale_di_Lebesgue#Funzioni_misurabili](https://it.wikipedia.org/wiki/Integrale_di_Lebesgue)
 
 # Research 16 - Law of large numbers
 
