@@ -61,19 +61,21 @@ $${\mu \left(\bigcup _{j=1}^{\infty }B_{j}\right)\leq \sum _{j=1}^{\infty }\mu (
 
 #### Lebesgue measure
 
-Now that we have defined what an outer measure is, 
+Now that we have defined what a generic outer measure is, we can define the Lebesgue measure, that is based upon the Lebesgue outer measure. The Lebesgue measure is the standard way of assigning a measure to subsets of $n$-dimensional Euclidean space. For n = 1, 2, or 3, it coincides with the standard measure of length, area, or volume.
 
-For any interval ${I = [a,b]}$, or ${I=(a,b)}$, in the set $\mathbb {R}$  of real numbers, let ${\ell (I)=b-a}$ denote its length. For any subset $E\subseteq {\mathbb  {R}}$, the Lebesgue outer measure ${\displaystyle \lambda ^{\!*\!}(E)}$ is defined as an infimum:
+Let's now define the Lebesgue measure for subsets of the set $\mathbb {R}$ of real numbers.
 
-$${\lambda ^{\!*\!}(E)=\inf \left\{\sum _{k=1}^{\infty }\ell (I_{k}):{(I_{k})_{k\in \mathbb {N} }}{\text{ is a sequence of open intervals with }}E\subset \bigcup _{k=1}^{\infty }I_{k}\right\}.}$$
+For any interval ${I = [a,b]}$, or ${I=(a,b)}$, in the set $\mathbb {R}$ of real numbers, let ${\ell (I)=b-a}$ denote its length. For any subset $E\subseteq {\mathbb  {R}}$, the Lebesgue outer measure ${\displaystyle \lambda ^{*}(E)}$ is defined as an infimum:
 
-Some sets {\displaystyle E}E satisfy the Carathéodory criterion, which requires that for every ${\displaystyle A\subseteq \mathbb {R}}$,
+$${\lambda ^{\!*\!}(E)=\inf \left\{\sum _{k=1}^{\infty }\ell (I_{k}):{(I_{k})_{k\in \mathbb {N} }}{\text{ is a sequence of open intervals with }}E\subset \bigcup _{k=1}^{\infty }I_{k}\right\}}$$
+
+Some sets $E$ satisfy the Carathéodory criterion, which requires that for every ${A\subseteq \mathbb {R}}$,
 
 $${\lambda ^{\!*\!}(A)=\lambda ^{\!*\!}(A\cap E)+\lambda ^{\!*\!}(A\cap E^{c}).}$$
 
-The set of all such $E$ forms a $\sigma$-algebra. For any such {\displaystyle E}E, its Lebesgue measure is defined to be its Lebesgue outer measure: {\displaystyle \lambda (E)=\lambda ^{\!*\!}(E)}{\displaystyle \lambda (E)=\lambda ^{\!*\!}(E)}.
+The set of all such $E$ forms a $\sigma$-algebra. For any such $E$, its Lebesgue measure is defined to be its Lebesgue outer measure: ${\lambda (E)=\lambda ^{\!*\!}(E)}$.
 
-A set {\displaystyle E}E that does not satisfy the Carathéodory criterion is not Lebesgue-measurable. Non-measurable sets do exist; an example is the Vitali sets.
+A set $E$ that does not satisfy the Carathéodory criterion is not Lebesgue-measurable. Non-measurable sets do exist; an example is the Vitali sets.[3]
 
 **References** \
 [1] [https://en.wikipedia.org/wiki/Lebesgue_integration](https://en.wikipedia.org/wiki/Lebesgue_integration) \
