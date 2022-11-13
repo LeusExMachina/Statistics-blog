@@ -11,21 +11,21 @@
 
 # Research 15 - Lebesgue-Stieltjes integration
 
-In order to define the Lebesgue-Stieltjes integration, we first need to define the Lebesgue integration, of which the Lebesgue-Stieltjes one is a generalization. To do that, we start from a generic definition of integral.
+In order to define the Lebesgue-Stieltjes integration, we first need to define the Lebesgue integration, of which the Lebesgue-Stieltjes is a generalization. To do that, we start from a generic definition of integral.
 
 ## Lebesgue integration
 
-In mathematics, the integral of a non-negative function of a single variable can be regarded, in the simplest case, as the area between the graph of that function and the x-axis. This definition led to the mathematical formulation of the Riemann integrals, where a certain portion of the domain of a function is divided in intervals, and we approximate the area under the function as the sum of the areas of the rectangles built on that intervals, which height is given by the graph of the function in that intervals. Reducing the length of the intervals into infinitesimals $dx$, we obtain the area under the function without approximation.
+In mathematics, the integral of a non-negative function of a single variable can be regarded, in the simplest case, as the area between the graph of that function and the x-axis. This definition led to the mathematical formulation of the Riemann integrals, where a certain portion of the domain of a function is divided in to intervals, and we approximate the area under the function as the sum of the areas of the rectangles built on those intervals, whose heights are given by the graph of the function in those intervals. Reducing the length of the intervals into infinitesimals $dx$, we obtain the area under the function without approximation.
 
-This definition works pretty well for simple functions, but what about for more exotic functions? An example of function that can't be integrated under the Riemann definition is the Dirichlet function, defined as:
+This definition suffices for simple functions, but not for more exotic functions. An example of a function that cannot be integrated under the Riemann definition is the Dirichlet function, defined as:
 
 $${\mathbf {1} _{\mathbb {Q} }(x)={\begin{cases}1&x\in \mathbb {Q} \\0&x\notin \mathbb {Q} \end{cases}}}$$
 
-This function is nowhere continuous and so can't be integrated under Riemann definition. Henri Lebesgue expanded the definition of integration in order to integrate also more complex functions: for example, the above Dirichlet function can be integrated with the Lebesgue integrals.
+This function is nowhere continuous and so cannot be integrated under the Riemann definition. Henri Lebesgue expanded the definition of integration in order to include also more complex functions: for example, the above Dirichlet function can be integrated with the Lebesgue integrals.
 
 ### Intuition behind Lebesgue integrals [1](https://en.wikipedia.org/wiki/Lebesgue_integration#Intuitive_interpretation)
 
-Let's now see the difference between Riemann integrals and Lebesgue integrals from an intuitive point of view.
+Let's now examine the difference between Riemann integrals and Lebesgue integrals from an intuitive point of view.
 
 For the Riemann integral, the domain is partitioned into intervals, and bars are constructed to meet the height of the graph. The areas of these bars are added together, and this approximates the integral, in effect by summing areas of the form ${f(x)dx}$ where ${f(x)}$ is the height of a rectangle and ${dx}$ is its width.
 
@@ -37,7 +37,7 @@ The Lebesgue integral may then be defined by adding up the areas of these horizo
 
 ### Formalization of Lebesgue integrals
 
-In order to formalize the Lebesgue integration, we need some preliminary concepts like the concepts of outer measure, Lebesgue measure, and Lebesgue-measurable functions. Let's describe all of them.
+In order to formalize the Lebesgue integration, we must identify some preliminary concepts: outer measure, Lebesgue measure, and Lebesgue-measurable functions.
 
 #### Outer measure [2](https://en.wikipedia.org/wiki/Outer_measure#Outer_measures)
 
@@ -75,6 +75,8 @@ The set of all such $E$ forms a $\sigma$-algebra. For any such $E$, its Lebesgue
 
 A set $E$ that does not satisfy the Carathéodory criterion is not Lebesgue-measurable. Non-measurable sets do exist; an example is the Vitali sets.
 
+Then, the Lebesgue measure of a set $E$ coincides with its Lebesgue outer measure when $E$ respects the Carathéodory criterion, while it's not defined if $E$ does not respect it.
+
 #### Lebesgue-measurable functions [1](https://en.wikipedia.org/wiki/Lebesgue_integration#Measurable_functions)
 
 We start with a measure space $(E, X, \mu)$ where $E$ is a set, $X$ is a $\sigma$-algebra of subsets of $E$, and $\mu$ is a (non-negative) measure on $E$ defined on the sets of $X$.
@@ -95,7 +97,7 @@ $${\sup _{k\in \mathbb {N} }f_{k},\quad \liminf _{k\in \mathbb {N} }f_{k},\quad 
 
 are measurable if the original sequence $(f_k)_k$, where $k \in \mathbb{N}$, consists of measurable functions.
 
-#### Lebesgue integral definition [1](https://en.wikipedia.org/wiki/Lebesgue_integration#Via_simple_functions), [4](https://it.wikipedia.org/wiki/Integrale_di_Lebesgue#Funzioni_semplici)
+### Lebesgue integral definition [1](https://en.wikipedia.org/wiki/Lebesgue_integration#Via_simple_functions), [4](https://it.wikipedia.org/wiki/Integrale_di_Lebesgue#Funzioni_semplici)
 
 Now that we have formalized all those previous concepts, we can proceed with the definition of the Lebesgue integrals. The following that is reported is the definition via simple functions. A simple function is a finite linear combination of indicator functions of measurable sets.
 
