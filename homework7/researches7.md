@@ -9,9 +9,9 @@
   };
 </script>
 
-# Research 15 - Labesgue-Stieltjes integration
+# Research 15 - Lebesgue-Stieltjes integration
 
-In order to define the Lebesgue-Stieltjes integration, we first need to define the Lebesgue integration, of which the Lebesgue-Stieltjs one is a generalization. To do that, we start from a generic definition of integral.
+In order to define the Lebesgue-Stieltjes integration, we first need to define the Lebesgue integration, of which the Lebesgue-Stieltjes one is a generalization. To do that, we start from a generic definition of integral.
 
 ## Lebesgue integration
 
