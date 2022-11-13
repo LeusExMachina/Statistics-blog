@@ -129,7 +129,7 @@ The set of the functions such that:
 
 $$\int _{E}|f|d\mu <\infty$$
 
-is said set of the functions integrable over $E$ according to Lebesgue by the measure $\mu$ (that, for what we said, is the Lebesgue measure), or also set of summable functions, and is denoted as ${L^{1}(\mu )}L^{1}(\mu )$.
+is said set of the functions integrable over $E$ according to Lebesgue with respect to the the measure $\mu$ (that, for what we said, is the Lebesgue measure), or also set of summable functions, and is denoted as ${L^{1}(\mu )}L^{1}(\mu )$.
 
 If $f$ is not a non-negative function, in order to define the Lebesgue integral we have to pass through a little workaround. In fact, if $f$ can include negative values, we can write it like ${f=f^{+}-f^{-}}$, where:
 
@@ -155,7 +155,23 @@ we say that $f$ is Lebesgue integrable.
 
 ## Lebesgue-Stieltjes integration [5](https://en.wikipedia.org/wiki/Lebesgue%E2%80%93Stieltjes_integration#Definition)
 
+Now that we have defined the Lebesgue integration, we can define the Lebesgue-Stieltjes integration: in fact, Lebesgue-Stieltjes integration generalizes the Lebesgue integration.
 
+Defining Lebesgue integration we saw that the measure used to compute the integral is the Lebesgue measure $\mu$. The Lebesgue-Stieltjes integration is basically the Lebesgue integration that uses as a measure the so called Lebesgue-Stjeltes measure $\mu_g$ instead of the Lebesgue measure $\mu$.
+
+Given a function ${g:\left[a,b\right]\rightarrow \mathbb {R}}$ that is monotone, non-decreasing and right-continuous, we can define $w((s,t]) = g(t)-g(s)$ and $w({a}) = 0$. Alternatively, if $g$ is left continuous, we define $w([s,t)) = g(t)-g(s)$ and $w({b}) = 0$.
+
+By Carathéodory's extension theorem, there is a unique Borel measure $\mu_g$ on $[a, b]$ which agrees with $w$ on every interval $I$. The measure $\mu_g$ arises from an outer measure given by:
+
+$$\mu _{g}(E)=\inf \left\{\sum _{i}\mu _{g}(I_{i})\ :\ E\subset \bigcup _{i}I_{i}\right\}$$
+
+This measure $\mu_g$ is the Lebesgue–Stieltjes measure associated with $g$. We can notice how the definition is very similar to the definition of the Lebesgue measure: it is in fact almost the same, but instead of $\ell (I) = b - a$ be the length of an interval $I = (a, b)$, we will define this length as $g(b) - g(a)$.
+
+Now that we defined the Lebesgue-Stieltjes measure, we can simply say that the Lebesgue–Stieltjes integral:
+
+$${\int _{a}^{b}f(x)\,dg(x)}\int _{a}^{b}f(x)\,dg(x)$$
+
+is defined as the Lebesgue integral of $f$ with respect to the measure $\mu_g$.
 
 **References** \
 [1] [https://en.wikipedia.org/wiki/Lebesgue_integration](https://en.wikipedia.org/wiki/Lebesgue_integration) \
