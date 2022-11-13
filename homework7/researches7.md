@@ -151,9 +151,11 @@ Finally, we have that if
 
 $$\int |f|\,d\mu <\infty$$
 
-we say that f is Lebesgue integrable.
+we say that $f$ is Lebesgue integrable.
 
 ## Lebesgue-Stieltjes integration [5](https://en.wikipedia.org/wiki/Lebesgue%E2%80%93Stieltjes_integration#Definition)
+
+
 
 **References** \
 [1] [https://en.wikipedia.org/wiki/Lebesgue_integration](https://en.wikipedia.org/wiki/Lebesgue_integration) \
