@@ -113,7 +113,7 @@ A simple function is, as we said, a finite linear combination of indicator funct
 
 $${s(x)=\sum _{i=1}^{n}a_{i}{\mathbf {1} }_{A_{i}}(x)}$$
 
-Where ${\mathbf {1} }_{A_{i}}(x)$ is the indicator function for each $A_i,\quad i = {1,...,n}$. For such a function, the Lebesgue integral on a set $F \in X$ is defined as:
+Where prova 1 is the indicator function for each $A_i,\quad i = {1,...,n}$. For such a function, the Lebesgue integral on a set $F \in X$ is defined as:
 
 $${\int _{F}s\,d\mu =\sum _{i=1}^{n}a_{i}\mu (A_{i}\cap F),\quad F\in X}$$
 
