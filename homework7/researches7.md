@@ -11,9 +11,74 @@
 
 # Research 15 - Labesgue-Stieltjes integration
 
-In progress...
+In order to define the Lebesgue-Stieltjes integration, we first need to define the Lebesgue integration, of which the Lebesgue-Stieltjs one is a generalization. To do that, we start from a generic definition of integral.
 
-**References**
+## Lebesgue integration
+
+In mathematics, the integral of a non-negative function of a single variable can be regarded, in the simplest case, as the area between the graph of that function and the x-axis. This definition led to the mathematical formulation of the Riemann integrals, where a certain portion of the domain of a function is divided in intervals, and we approximate the area under the function as the sum of the areas of the rectangles built on that intervals, which height is given by the graph of the function in that intervals. Reducing the length of the intervals into infinitesimals $dx$, we obtain the area under the function without approximation.
+
+This definition works pretty well for simple functions, but what about for more exotic functions? An example of function that can't be integrated under the Riemann definition is the Dirichlet function, defined as:
+
+$${\mathbf {1} _{\mathbb {Q} }(x)={\begin{cases}1&x\in \mathbb {Q} \\0&x\notin \mathbb {Q} \end{cases}}}$$
+
+This function is nowhere continuous and so can't be integrated under Riemann definition. Henri Lebesgue expanded the definition of integration in order to integrate also more complex functions: for example, the above Dirichlet function can be integrated with the Lebesgue integrals.
+
+### Intuition behind Lebesgue integrals
+
+Let's now see the difference between Riemann integrals and Lebesgue integrals from an intuitive point of view.
+
+For the Riemann integral, the domain is partitioned into intervals, and bars are constructed to meet the height of the graph. The areas of these bars are added together, and this approximates the integral, in effect by summing areas of the form ${f(x)dx}$ where ${f(x)}$ is the height of a rectangle and ${dx}$ is its width.
+
+For the Lebesgue integral, the range is partitioned into intervals, and so the region under the graph is partitioned into horizontal "slabs" (which may not be connected sets). The area of a small horizontal "slab" under the graph of $f$, of height $dy$, is equal to the measure of the slab's width times $dy$:
+
+$${\mu \left(\{x\mid f(x)>y\}\right)\,dy.}$$
+
+The Lebesgue integral may then be defined by adding up the areas of these horizontal slabs.[1]
+
+### Formalization of Lebesgue integrals
+
+In order to formalize the Lebesgue integration, we need some preliminary concepts like the concepts of outer measure, Lebesgue measure, and Lebesgue-measurable functions. Let's describe all of them.
+
+#### Outer measure
+
+In the mathematical field of measure theory, an outer measure or exterior measure is a function defined on all subsets of a given set with values in the extended real numbers satisfying some additional technical conditions.
+
+More formally, given a set $X$, let $2^X$ denote the collection of all subsets of $X$, including the empty set $\varnothing$ . An outer measure on $X$ is a set function
+
+$${\mu :2^{X}\to [0,\infty ]}$$
+
+such that:
+
+- null empty set: ${\mu (\varnothing )=0}$
+
+- monotone: if $A$ and $B$ are subsets of $X$ with ${A\subseteq B}$, then ${\mu (A)\leq \mu (B)}$
+
+- for arbitrary subsets ${B_{1},B_{2},\ldots}$ of $X$,
+
+$${\mu \left(\bigcup _{j=1}^{\infty }B_{j}\right)\leq \sum _{j=1}^{\infty }\mu (B_{j}).}$$
+
+[2]
+
+#### Lebesgue measure
+
+Now that we have defined what an outer measure is, 
+
+For any interval ${I = [a,b]}$, or ${I=(a,b)}$, in the set $\mathbb {R}$  of real numbers, let ${\ell (I)=b-a}$ denote its length. For any subset $E\subseteq {\mathbb  {R}}$, the Lebesgue outer measure ${\displaystyle \lambda ^{\!*\!}(E)}$ is defined as an infimum:
+
+$${\lambda ^{\!*\!}(E)=\inf \left\{\sum _{k=1}^{\infty }\ell (I_{k}):{(I_{k})_{k\in \mathbb {N} }}{\text{ is a sequence of open intervals with }}E\subset \bigcup _{k=1}^{\infty }I_{k}\right\}.}$$
+
+Some sets {\displaystyle E}E satisfy the Carathéodory criterion, which requires that for every ${\displaystyle A\subseteq \mathbb {R}}$,
+
+$${\lambda ^{\!*\!}(A)=\lambda ^{\!*\!}(A\cap E)+\lambda ^{\!*\!}(A\cap E^{c}).}$$
+
+The set of all such $E$ forms a $\sigma$-algebra. For any such {\displaystyle E}E, its Lebesgue measure is defined to be its Lebesgue outer measure: {\displaystyle \lambda (E)=\lambda ^{\!*\!}(E)}{\displaystyle \lambda (E)=\lambda ^{\!*\!}(E)}.
+
+A set {\displaystyle E}E that does not satisfy the Carathéodory criterion is not Lebesgue-measurable. Non-measurable sets do exist; an example is the Vitali sets.
+
+**References** \
+[1] [https://en.wikipedia.org/wiki/Lebesgue_integration](https://en.wikipedia.org/wiki/Lebesgue_integration) \
+[2] [https://en.wikipedia.org/wiki/Outer_measure](https://en.wikipedia.org/wiki/Outer_measure) \
+[3] [https://en.wikipedia.org/wiki/Lebesgue_measure](https://en.wikipedia.org/wiki/Lebesgue_measure)
 
 # Research 16 - Law of large numbers
 
