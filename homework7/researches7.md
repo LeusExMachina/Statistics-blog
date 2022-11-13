@@ -79,7 +79,7 @@ A set $E$ that does not satisfy the Carathéodory criterion is not Lebesgue-meas
 
 We start with a measure space $(E, X, \mu)$ where $E$ is a set, $X$ is a $\sigma$-algebra of subsets of $E$, and $\mu$ is a (non-negative) measure on $E$ defined on the sets of $X$.
 
-For example, $E$ can be Euclidean $n$-space $\mathbb{R}^n$ or some Lebesgue measurable subset of it, X is the $\sigma$-algebra of all Lebesgue measurable subsets of $E$, and $\mu$ is the Lebesgue measure. In the mathematical theory of probability, we confine our study to a probability measure $\mu$, which satisfies $\mu(E) = 1$.
+For example, $E$ can be Euclidean $n$-space $\mathbb{R}^n$ or some Lebesgue measurable subset of it, $X$ is the $\sigma$-algebra of all Lebesgue measurable subsets of $E$, and $\mu$ is the Lebesgue measure. In the mathematical theory of probability, we confine our study to a probability measure $\mu$, which satisfies $\mu(E) = 1$.
 
 Lebesgue's theory defines integrals for a class of functions called measurable functions. A real-valued function $f$ on $E$ is measurable if the pre-image of every interval of the form $(t, \infty)$ is in $X$:
 
