@@ -125,13 +125,42 @@ where the supremum is evaluated considering all the simple functions $s$ such th
 
 Note that $\mathbb{R}^{*}$ is the extended real set, defined as $\mathbb{R} \cup (-\infty; +\infty)$.
 
+The set of the functions such that:
 
+$$\int _{E}|f|d\mu <\infty$$
+
+is said set of the functions integrable over $E$ according to Lebesgue by the measure $\mu$ (that, for what we said, is the Lebesgue measure), or also set of summable functions, and is denoted as ${L^{1}(\mu )}L^{1}(\mu )$.
+
+If $f$ is not a non-negative function, in order to define the Lebesgue integral we have to pass through a little workaround. In fact, if $f$ can include negative values, we can write it like ${f=f^{+}-f^{-}}$, where:
+
+$${f^{+}(x)={\begin{cases}f(x)&{\text{if }}f(x)>0\\0&{\text{otherwise}}\end{cases}}}$$
+
+$${f^{-}(x)={\begin{cases}-f(x)&{\text{if }}f(x)<0\\0&{\text{otherwise}}\end{cases}}}$$
+
+Note that both $f^{+}$ and $f^{-}$ are non-negative measurable functions. Also note that:$|f|=f^{+}+f^{-}$.
+
+We say that the Lebesgue integral of the measurable function $f$ exists, or is defined, if at least one of ${\int f^{+}\,d\mu }$ and ${\int f^{-}\,d\mu }$ is finite:
+
+$$\min \left(\int f^{+}\,d\mu ,\int f^{-}\,d\mu \right)<\infty$$
+
+In this case we define:
+
+$${\displaystyle \int f\,d\mu =\int f^{+}\,d\mu -\int f^{-}\,d\mu}$$
+
+Finally, we have that if
+
+$$\int |f|\,d\mu <\infty$$
+
+we say that f is Lebesgue integrable.
+
+## Lebesgue-Stieltjes integration [5](https://en.wikipedia.org/wiki/Lebesgue%E2%80%93Stieltjes_integration#Definition)
 
 **References** \
 [1] [https://en.wikipedia.org/wiki/Lebesgue_integration](https://en.wikipedia.org/wiki/Lebesgue_integration) \
 [2] [https://en.wikipedia.org/wiki/Outer_measure](https://en.wikipedia.org/wiki/Outer_measure) \
 [3] [https://en.wikipedia.org/wiki/Lebesgue_measure](https://en.wikipedia.org/wiki/Lebesgue_measure) \
-[4] [https://it.wikipedia.org/wiki/Integrale_di_Lebesgue#Funzioni_misurabili](https://it.wikipedia.org/wiki/Integrale_di_Lebesgue)
+[4] [https://it.wikipedia.org/wiki/Integrale_di_Lebesgue](https://it.wikipedia.org/wiki/Integrale_di_Lebesgue) \
+[5] [https://en.wikipedia.org/wiki/Lebesgue%E2%80%93Stieltjes_integration](https://en.wikipedia.org/wiki/Lebesgue%E2%80%93Stieltjes_integration)
 
 # Research 16 - Law of large numbers
 
