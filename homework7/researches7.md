@@ -171,7 +171,7 @@ This measure $\mu_g$ is the Lebesgue–Stieltjes measure associated with $g$. No
 
 Now that we defined the Lebesgue-Stieltjes measure, we can simply say that the Lebesgue–Stieltjes integral:
 
-$${\int _{a}^{b}f(x)\,dg(x)}\int _{a}^{b}f(x)\,dg(x)$$
+$$\int _{a}^{b}f(x)\,dg(x)$$
 
 is defined as the Lebesgue integral of $f$ with respect to the measure $\mu_g$.
 
