@@ -137,7 +137,7 @@ $${f^{+}(x)={\begin{cases}f(x)&{\text{if }}f(x)>0\\0&{\text{otherwise}}\end{case
 
 $${f^{-}(x)={\begin{cases}-f(x)&{\text{if }}f(x)<0\\0&{\text{otherwise}}\end{cases}}}$$
 
-Note that both $f^{+}$ and $f^{-}$ are non-negative measurable functions. Also note that:$|f|=f^{+}+f^{-}$.
+Note that both $f^{+}$ and $f^{-}$ are non-negative measurable functions. Also note that:$\|f\|=f^{+}+f^{-}$.
 
 We say that the Lebesgue integral of the measurable function $f$ exists, or is defined, if at least one of ${\int f^{+}\,d\mu }$ and ${\int f^{-}\,d\mu }$ is finite:
 
