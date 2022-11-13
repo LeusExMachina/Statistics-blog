@@ -99,7 +99,7 @@ are measurable if the original sequence $(f_k)_k$, where $k \in \mathbb{N}$, con
 
 ### Lebesgue integral definition [1](https://en.wikipedia.org/wiki/Lebesgue_integration#Via_simple_functions), [4](https://it.wikipedia.org/wiki/Integrale_di_Lebesgue#Funzioni_semplici)
 
-Now that we have formalized all those previous concepts, we can proceed with the definition of the Lebesgue integrals. The following that is reported is the definition via simple functions. A simple function is a finite linear combination of indicator functions of measurable sets.
+Now that we have formalized these concepts, we can proceed with the definition of the Lebesgue integration. The following that is reported is the definition via simple functions. A simple function is a finite linear combination of indicator functions of measurable sets.
 
 An indicator function of a measurable set $A$ is denoted as ${\mathbf {1}}_{A}:X\to \lbrace 0,1\rbrace$ and is defined as:
 
@@ -157,9 +157,9 @@ we say that $f$ is Lebesgue integrable.
 
 ## Lebesgue-Stieltjes integration [5](https://en.wikipedia.org/wiki/Lebesgue%E2%80%93Stieltjes_integration#Definition)
 
-Now that we have defined the Lebesgue integration, we can define the Lebesgue-Stieltjes integration: in fact, Lebesgue-Stieltjes integration generalizes the Lebesgue integration.
+Now that we have defined the Lebesgue integration, we can define the Lebesgue-Stieltjes integration.
 
-Defining Lebesgue integration we saw that the measure used to compute the integral is the Lebesgue measure $\mu$. The Lebesgue-Stieltjes integration is basically the Lebesgue integration that uses as a measure the so called Lebesgue-Stjeltes measure $\mu_g$ instead of the Lebesgue measure $\mu$.
+In defining the Lebesgue integration we saw that the measure used to compute the integral is the Lebesgue measure $\mu$. The Lebesgue-Stieltjes integration is the Lebesgue integration that uses the Lebesgue-Stjeltes measure $\mu_g$ instead of the Lebesgue measure $\mu$. We want now to define what the Lebesgue-Stjeltes measure is.
 
 Given a function ${g:\left[a,b\right]\rightarrow \mathbb {R}}$ that is monotone, non-decreasing and right-continuous, we can define $w((s,t]) = g(t)-g(s)$ and $w({a}) = 0$. Alternatively, if $g$ is left continuous, we define $w([s,t)) = g(t)-g(s)$ and $w({b}) = 0$.
 
@@ -167,7 +167,7 @@ By Carathéodory's extension theorem, there is a unique Borel measure $\mu_g$ on
 
 $$\mu _{g}(E)=\inf \left\{\sum _{i}\mu _{g}(I_{i})\ :\ E\subset \bigcup _{i}I_{i}\right\}$$
 
-This measure $\mu_g$ is the Lebesgue–Stieltjes measure associated with $g$. We can notice how the definition is very similar to the definition of the Lebesgue measure: it is in fact almost the same, but instead of $\ell (I) = b - a$ be the length of an interval $I = (a, b)$, we will define this length as $g(b) - g(a)$.
+This measure $\mu_g$ is the Lebesgue–Stieltjes measure associated with $g$. Notice how the definition is similar to the definition of the Lebesgue measure: it is in fact almost the same, but instead of $\ell (I) = b - a$ be the length of an interval $I = (a, b)$, we will define this length as $g(b) - g(a)$. If $g$ is the identity function, the Lebesgue–Stieltjes measure corresponds with the Lebesgue measure.
 
 Now that we defined the Lebesgue-Stieltjes measure, we can simply say that the Lebesgue–Stieltjes integral:
 
@@ -184,7 +184,7 @@ is defined as the Lebesgue integral of $f$ with respect to the measure $\mu_g$.
 
 # Research 16 - Law of large numbers
 
-In order to prove the so called law of large numbers, we first need two results: the **Markov (Ма́рков) Inequality** and the **Chebyshev (Чебышёв) Inequality**. After proving them, we will see how they lead to the Law of large numbers.
+In order to prove the so-called law of large numbers, we first need two results: the **Markov (Ма́рков) Inequality** and the **Chebyshev (Чебышёв) Inequality**. After proving them, we will see how they lead to the law of large numbers.
 
 ### Markov Inequality
 
@@ -254,11 +254,11 @@ That is the Chebyshev inequality.
 
 ### Law of large numbers
 
-Let's consider now any random variable $X$. In [research 13](https://leusexmachina.github.io/StatisticsHomework/homework6/researches6), we have seen the concept of sample mean $\bar{X}$ from the random variable $X$. We have also seen that the expected value $\operatorname {E}(\bar{X})$ is equal to the expected value $\operatorname {E}(X) = \mu$, while the variance $\operatorname{Var} (\bar{X}) = \dfrac{\sigma^2}{n}$, where $\sigma^2 = \operatorname{Var} (X)$. By the Chebyshev inequality:
+Now, consider a random variable $X$. In [research 13](https://leusexmachina.github.io/StatisticsHomework/homework6/researches6), we have seen the concept of sample mean $\bar{X}$ from the random variable $X$. We have also seen that the expected value $\operatorname {E}(\bar{X})$ is equal to the expected value $\operatorname {E}(X) = \mu$, while the variance $\operatorname{Var} (\bar{X}) = \dfrac{\sigma^2}{n}$, where $\sigma^2 = \operatorname{Var} (X)$. By the Chebyshev inequality:
 
 $${\operatorname {P} (|\bar{X}-\operatorname {E} (\bar{X})|\geq a)\leq {\frac {\operatorname {Var} (\bar{X})}{a^{2}}}}$$
 
-But knowing expected value and variance of the sample mean, we can rewrite:
+But knowing the expected value and variance of the sample mean, we can rewrite:
 
 $${\operatorname {P} (|\bar{X}-\mu|\geq a)\leq {\frac {\sigma^2}{na^{2}}}}$$
 
