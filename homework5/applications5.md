@@ -4,7 +4,7 @@ I decided to "merge" the two applications, first creating an editable rectangle 
 
 ## Editable rectangles
 
-[Click here](https://drive.google.com/uc?export=download&id=1UzX2jlMrcukr38i0n6gFTJlBoou71bzl) to download the application.
+[Click here](https://drive.google.com/uc?export=download&id=1RyJUm4KoM_unX1ftbpST7oXqZWgv7C_5) to download the application.
 
 A video of the application can be watched down below:
 
@@ -62,6 +62,9 @@ namespace App_MovResRect_C
 
         double ScaleFact = 0.1d;
 
+        int hoverX;
+        int hoverY;
+
         private void editableRect_Down(object sender, MouseEventArgs e)
         {
             if (r.Contains(e.X, e.Y))
@@ -94,6 +97,9 @@ namespace App_MovResRect_C
 
         private void editableRect_Move(object sender, MouseEventArgs e)
         {
+            hoverX = e.X;
+            hoverY = e.Y;
+
             int delta_x = e.X - x_mouse;
             int delta_y = e.Y - y_mouse;
 
@@ -111,7 +117,11 @@ namespace App_MovResRect_C
 
         private void editableRect_Zoom(object sender, MouseEventArgs e)
         {
-            if (r.Contains(e.X, e.Y))
+
+            int pictx = hoverX;
+            int picty = hoverY;
+
+            if (r.Contains(pictx, picty))
             {
                 x_down = r.X;
                 y_down = r.Y;
@@ -129,11 +139,11 @@ namespace App_MovResRect_C
 
 As we can see from the code, to move and resize the rectangle we used the events "MouseUp", "MouseDown" and "MouseMove" from the PictureBox. When a button of the mouse is pressed, the method "editableRect_Down" is called. If and only if the cursor is over the rectangle area this method will set "true" a bolean variable: "drag", if we clicked with the left mouse button, or "resizing", if we clicked with the right mouse button.
 
-When the mouse moves over the PictureBox, the method "editableRect_Move" is called. This method will actually do something only if one of the variables "drag" or "resizing" is set to "true": in this case, the method allows to move or resize the rectangle acting respectively on the position or on its height and width.
+When the mouse moves over the PictureBox, the method "editableRect_Move" is called. This method will actually do something only if one of the variables "drag" or "resizing" is set to "true": in this case, the method allows to move or resize the rectangle acting respectively on the position or on its height and width. The method also keeps constant track of the position of the mouse over the picturebox, through the variables "hoverX" and "hoverY".
 
 If we stop pressing the mouse button, the method "editableRect_Up" will be called, and thus both resizing and dragging will be disable.
 
-Finally, in order to obtain the zoom of the rectangle, I used the event "MouseWheel" from the Form. This event is generated when when we scroll with the mouse wheel, and will call up the handler "editableRect_Zoom". This handler acts only if the mouse cursor is over the rectangle's area and will increment both the height and the width of the mouse of a factor "Delta". This "Delta" quantifies the wheel turns from the mouse, and is a positive or a negative value according to the sense of rotation. To keep fixed the centre of the rectangle, and not his upper left angle, we also move it of half the quantity added in both the directions.
+Finally, in order to obtain the zoom of the rectangle, I used the event "MouseWheel" from the Form. This event is generated when when we scroll with the mouse wheel, and will call up the handler "editableRect_Zoom". This handler acts only if the mouse cursor (which position is given by the variables "hoverX" and "hoverY") is over the rectangle's area and will increment both the height and the width of the mouse of a factor "Delta". This "Delta" quantifies the wheel turns from the mouse, and is a positive or a negative value according to the sense of rotation. To keep fixed the centre of the rectangle, and not his upper left angle, we also move it of half the quantity added in both the directions.
 
 Notice that to enable the moving animation, rectangles must be periodically deleted and re-drawn with the modifications. To do so I used a timer:
 
@@ -150,7 +160,7 @@ private void timer1_Tick(object sender, EventArgs e)
 
 ## Charts
 
-[Click here](https://drive.google.com/uc?export=download&id=1cPOKvc9RAf6oYuBhIcLojMPqTTgETIwg) to download the application.
+[Click here](https://drive.google.com/uc?export=download&id=1e3lPHUrm5fGnYn7m1YWd8pk444DJZ24E) to download the application.
 
 A video of the application can be watched down below:
 
