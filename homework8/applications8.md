@@ -116,7 +116,7 @@ $$y = \sqrt{-2 \ln s}\left( \frac{v}{\sqrt{s}}\right) = v \cdot \sqrt{\frac{-2 \
 
 # Application 13 - Various other distributions
 
-[Click Here](placeholder) to download the application
+[Click Here](https://drive.google.com/uc?export=download&id=1vbqVrHYQu6ONdIyyPpn21Ad9XuvBPaoS) to download the application
 
 A video of the application can be watched down below:
 
