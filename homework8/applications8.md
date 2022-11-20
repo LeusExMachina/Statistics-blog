@@ -212,9 +212,9 @@ The parameter $k$ is the degree of freedom of the random variable so defined. In
 
 The Cauchy random variable has a distribution with density function:
 
+$$f_{{(x_{0},y_{0})}}(x)={\frac  {1}{\pi }}{\frac  {y_{0}}{(x-x_{0})^{2}+y_{0}^{2}}}$$
 
-
-Where &$x_0$ and $y_0$ are the parameters of the function. In the particular case where $x_0 = 0$ and $y_0 = 1$, the Cauchy random variable distribution is the same distribution of a random variable $\dfrac{X}{Y}$, where $X$ and $Y$ are normal random variables with mean $0$ and variance $1$. This is the case represented in the application: the distribution shown is obtained by the division of each sample of the normal $X$ with the corresponding sample of the normal $Y$.
+Where $x_0$ and $y_0$ are the parameters of the function. In the particular case where $x_0 = 0$ and $y_0 = 1$, the Cauchy random variable distribution is the same distribution of a random variable $\dfrac{X}{Y}$, where $X$ and $Y$ are normal random variables with mean $0$ and variance $1$. This is the case represented in the application: the distribution shown is obtained by the division of each sample of the normal $X$ with the corresponding sample of the normal $Y$.
 
 ### Fisher-Snedecor Random Variable
 
