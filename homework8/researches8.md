@@ -125,13 +125,25 @@ Meaning that the random variable so defined converges in distribution to a norma
 
 # Research 18 - generation of a normal random variable
 
+Some methods that are used to generate random values that follow a normal distribution, thus creating a normal random variable, are for example the **Box-Muller** transform and the **Marsaglia polar method**. Let's describe both of them.
+
+## Box-Muller transform
+
 The Box-Muller transform is a way to generate two independent normal random variables $X$ and $Y$, using two independent random variables $U_1$ and $U_2$ uniform over (0,1). The way $X$ and $Y$ are computed is the following:
 
 $${X=R\cos(\Theta )={\sqrt {-2\ln U_{1}}}\cos(2\pi U_{2})}$$
 
 $${Y=R\sin(\Theta )={\sqrt {-2\ln U_{1}}}\sin(2\pi U_{2})}$$
 
+Both $X$ and $Y$ are computed considering $U_1$ as a radius and $U_2$ as an angle, and operating a transformation from polar to linear coordinates. Notice how multiplying $U_2$ by $2\pi$ is necessary to generate values between $0$ and $2\pi$, while applying the logarithm to $U_1$ guarantees bot the generation of values between $0$ and $+\infty$, so that the computed pair $(X,Y)$ can be any point on the cartesian plane.
 
+Notice also that the generated variables follow a normal distribution with mean $0$ and variance $1$. By the way, it's easy to modify the transform to generate a paair normal distributions with chosen mean and variance:
+
+$${X=R\cos(\Theta )\sigma + \mu={\sqrt {-2\ln U_{1}}}\cos(2\pi U_{2})\sigma + \mu}$$
+
+$${Y=R\sin(\Theta )\sigma + \mu={\sqrt {-2\ln U_{1}}}\sin(2\pi U_{2})\sigma + \mu}$$
+
+## Marsaglia polar method
 
 Another method that can be used to generate a pair of independent normal random variables is the so called **Marsaglia polar method**. This method uses the same theoretical basis of the Box-Muller method, of which it represents the polar form.
 
