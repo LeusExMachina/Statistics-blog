@@ -143,7 +143,7 @@ $${X=R\cos(\Theta )\sigma + \mu={\sqrt {-2\ln U_{1}}}\cos(2\pi U_{2})\sigma + \m
 
 $${Y=R\sin(\Theta )\sigma + \mu={\sqrt {-2\ln U_{1}}}\sin(2\pi U_{2})\sigma + \mu}$$
 
-where $\sigma$ is the chosen mean square error and $\mu$ is the mean,
+where $\sigma$ is the chosen mean square error and $\mu$ is the chosen mean.
 
 ## Marsaglia polar method
 
