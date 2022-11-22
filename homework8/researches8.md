@@ -137,11 +137,13 @@ $${Y=R\sin(\Theta )={\sqrt {-2\ln U_{1}}}\sin(2\pi U_{2})}$$
 
 Both $X$ and $Y$ are computed considering $U_1$ as a radius and $U_2$ as an angle, and operating a transformation from polar to linear coordinates. Notice how multiplying $U_2$ by $2\pi$ is necessary to generate values between $0$ and $2\pi$, while applying the logarithm to $U_1$ guarantees bot the generation of values between $0$ and $+\infty$, so that the computed pair $(X,Y)$ can be any point on the cartesian plane.
 
-Notice also that the generated variables follow a normal distribution with mean $0$ and variance $1$. By the way, it's easy to modify the transform to generate a paair normal distributions with chosen mean and variance:
+Notice also that the generated variables follow a normal distribution with mean $0$ and variance $1$. By the way, it's easy to modify the transform to generate a pair normal distributions with chosen mean and variance:
 
 $${X=R\cos(\Theta )\sigma + \mu={\sqrt {-2\ln U_{1}}}\cos(2\pi U_{2})\sigma + \mu}$$
 
 $${Y=R\sin(\Theta )\sigma + \mu={\sqrt {-2\ln U_{1}}}\sin(2\pi U_{2})\sigma + \mu}$$
+
+where $\sigma$ is the chosen mean square error and $\mu$ is the mean,
 
 ## Marsaglia polar method
 
@@ -156,6 +158,12 @@ We will then have:
 $$x = \sqrt{-2 \ln s} \left(\frac{u}{\sqrt{s}}\right) = u \cdot \sqrt{\frac{-2 \ln s}{s}}$$
 
 $$y = \sqrt{-2 \ln s}\left( \frac{v}{\sqrt{s}}\right) = v \cdot \sqrt{\frac{-2 \ln s}{s}}$$
+
+Again, if we want to choose the mean $\mu$ and the variance $\sigma^2$ of the generated variables:
+
+$$x = \sqrt{-2 \ln s} \left(\frac{u}{\sqrt{s}}\right)\cdot \sigma + \mu = u \cdot \sqrt{\frac{-2 \ln s}{s}}\cdot \sigma + \mu$$
+
+$$y = \sqrt{-2 \ln s}\left( \frac{v}{\sqrt{s}}\right)\cdot \sigma + \mu = v \cdot \sqrt{\frac{-2 \ln s}{s}}\cdot \sigma + \mu$$
 
 **References** \
 [1] [https://it.wikipedia.org/wiki/Trasformazione_di_Box-Muller](https://it.wikipedia.org/wiki/Trasformazione_di_Box-Muller)\
