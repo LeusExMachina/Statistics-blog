@@ -33,9 +33,9 @@ $$n! \simeq  n^n e^{-n}\sqrt{2 \pi n}\qquad \text{as } n \to \infty$$
 
 Using this result, we can re-write the Binomial distribution as:
 
-$${\begin{aligned}{n \choose k}p^{k}q^{{n-k}}&={\frac  {n!}{k!(n-k)!}}p^{k}q^{{n-k}}\\&\simeq {\frac  {n^{n}e^{{-n}}{\sqrt  {2\pi n}}}{k^{k}e^{{-k}}{\sqrt  {2\pi k}}(n-k)^{{n-k}}e^{{-(n-k)}}{\sqrt  {2\pi (n-k)}}}}p^{k}q^{{n-k}}\\&={\sqrt  {{\frac  {n}{2\pi k\left(n-k\right)}}}}{\frac  {n^{n}}{k^{k}\left(n-k\right)^{{n-k}}}}p^{k}q^{{n-k}}\\&={\sqrt  {{\frac  {n}{2\pi k\left(n-k\right)}}}}\left({\frac  {np}{k}}\right)^{k}\left({\frac  {nq}{n-k}}\right)^{{n-k}}\end{aligned}}$$
+$${\begin{aligned}{n \choose k}p^{k}q^{{n-k}}&={\frac{n!}{k!(n-k)!}}p^{k}q^{{n-k}} \simeq {\frac{n^{n}e^{{-n}}{\sqrt{2\pi n}}}{k^{k}e^{{-k}}{\sqrt{2\pi k}}(n-k)^{{n-k}}e^{{-(n-k)}}{\sqrt  {2\pi (n-k)}}}}p^{k}q^{{n-k}}\\&={\sqrt  {{\frac  {n}{2\pi k\left(n-k\right)}}}}{\frac{n^{n}}{k^{k}\left(n-k\right)^{{n-k}}}}p^{k}q^{{n-k}}\\&={\sqrt{{\frac{n}{2\pi k\left(n-k\right)}}}}\left({\frac  {np}{k}}\right)^{k}\left({\frac  {nq}{n-k}}\right)^{{n-k}}\end{aligned}}$$
 
-Now, since we assumed $k$ close to $np$, we can approximate ${\tfrac  {k}{n}}\to p$ and write:
+Now, since we assumed $k$ close to $np$, we can approximate ${\tfrac{k}{n}}\to p$ and write:
 
 $${\begin{aligned}{n \choose k}p^{k}q^{{n-k}}&\simeq {\sqrt  {{\frac  {1}{2\pi n{\frac  {k}{n}}\left(1-{\frac  {k}{n}}\right)}}}}\left({\frac  {np}{k}}\right)^{{k}}\left({\frac  {nq}{n-k}}\right)^{{n-k}}\\&\simeq {\frac  {1}{{\sqrt  {2\pi npq}}}}\left({\frac  {np}{k}}\right)^{{k}}\left({\frac  {nq}{n-k}}\right)^{{n-k}}\qquad p+q=1\\\end{aligned}}$$
 
