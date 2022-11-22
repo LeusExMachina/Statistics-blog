@@ -86,3 +86,18 @@ $${n \choose k}p^{k}q^{n-k} \simeq {\frac {1}{\sqrt {2\pi npq}}}e^{\frac {-(k-np
 {% endraw %}
 
 ## Gauss derivation
+
+The previous derivation proved that, under some assumptions, a Binomial random variable can be approximated to a Normal random variable $N(\mu, \sigma^2)$, where $\mu = np$ and $\sigma^2 = npq$. As previously mentioned, this result went unnoticed and, a few years later, Gauss ended up deriving the same distribution with a totally different process.
+
+The formal derivation of the normal distribution made by Gauss will not be reported, since it needs the knowledge of complex topics that were not covered during the lectures. Intuitively, Gauss managed to infer the distribution by studying the inference of the mean of an unknown random variable.
+
+In particular, while studying some astronomical phenomena, Gauss calculated a specific random variable for which a certain extimation (specifically, the maximum likelihood estimation) of the mean of that random variable, given some samples of it, coincided with the sample mean. It can be proven that the only random variable with such a property has the following density function:
+
+{% raw %}
+$$f(x) = \frac {\alpha}{\sqrt {2\pi}}e^{-\frac{1}{2}\alpha(x-\mu)^2}$$
+{% endraw %}
+
+This density, for $\alpha = \frac{1}{\sigma}$, is exactly the normal density function.
+
+## Central limit theorem
+
