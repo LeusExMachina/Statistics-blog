@@ -9,7 +9,7 @@
   };
 </script>
 
-# Application 12 - cartesian coordinates Distribution / Theory - generating a normal random variable
+# Application 12 - cartesian coordinates Distribution
 
 [Click here](https://drive.google.com/uc?export=download&id=1uApk8c5zW7Q1q-2IMuGvgfh1wK47uJMK) to download the application.
 
@@ -86,35 +86,17 @@ Instantiating an object of this class, we can call the method "getNewPair()", th
 
 The application uses the above class to generate a certain number of coordinates, which can be specified by the user, and then represents them in a plane. It then computes and show the empirical distribution of both the $x$-es and the $y$-s obtained.
 
-From the video, we can easily notice that the distributions obtained don't follow anymore a uniform density function, but instead resemble two normal distributions. This is true because we are using something that is very similar to the **Box-Muller transform**.
-
-The Box-Muller transform is a way to generate two independent normal random variables $X$ and $Y$, using two independent random variables $U_1$ and $U_2$ uniform over (0,1). The way $X$ and $Y$ are computed is the following:
-
-$${X=R\cos(\Theta )={\sqrt {-2\ln U_{1}}}\cos(2\pi U_{2})}$$
-
-$${Y=R\sin(\Theta )={\sqrt {-2\ln U_{1}}}\sin(2\pi U_{2})}$$
+From the video, we can easily notice that the distributions obtained don't follow anymore a uniform density function, but instead resemble two normal distributions. This is true because we are using something that is very similar to the **Box-Muller transform**, that was explained in research 18.
 
 Notice then that the only difference between the actual Box-Muller transform and our coordinate generation is that for us $R = rU_1$, while for Box-Muller $R = \sqrt{-2\ln U_{1}}$. We will then generate coordinates where both $x$ and $y$ are bounded between $-r$ and $r$, and their distribution is not actually normal (although near to normal).
 
 In **application 13**, we will implement the correct Box-Muller method and use it to generate normal random variables.
 
-Another method that can be used to generate a pair of independent normal random variables is the so called **Marsaglia polar method**. This method uses the same theoretical basis of the Box-Muller method, of which it represents the polar form.
-
-This method uses again two uniform random variables $U_1$ and $U_2$ to generate two normal random variables $X$ and $Y$. Each time we want to sample a couple $(x,y)$ from the couple of normal random variables $(X,Y)$, we sample two values $(u,v)$ respectively from $U_1$ and $U_2$ such that:
-
-$$0 < s = u + v < 1$$
-
-We will then have:
-
-$$x = \sqrt{-2 \ln s} \left(\frac{u}{\sqrt{s}}\right) = u \cdot \sqrt{\frac{-2 \ln s}{s}}$$
-
-$$y = \sqrt{-2 \ln s}\left( \frac{v}{\sqrt{s}}\right) = v \cdot \sqrt{\frac{-2 \ln s}{s}}$$
-
 **References** \
 [1] [https://it.wikipedia.org/wiki/Trasformazione_di_Box-Muller](https://it.wikipedia.org/wiki/Trasformazione_di_Box-Muller)
 
 
-# Application 13 - Various other distributions
+# Application 13 + Research on Application 7 - Various other distributions
 
 [Click Here](https://drive.google.com/uc?export=download&id=1vbqVrHYQu6ONdIyyPpn21Ad9XuvBPaoS) to download the application
 

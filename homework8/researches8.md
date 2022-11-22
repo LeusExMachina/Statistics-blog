@@ -89,7 +89,7 @@ $${n \choose k}p^{k}q^{n-k} \simeq {\frac {1}{\sqrt {2\pi npq}}}e^{\frac {-(k-np
 
 The previous derivation proved that, under some assumptions, a Binomial random variable can be approximated to a Normal random variable $N(\mu, \sigma^2)$, where $\mu = np$ and $\sigma^2 = npq$. As previously mentioned, this result went unnoticed and, a few years later, Gauss ended up deriving the same distribution with a totally different process.
 
-The formal derivation of the normal distribution made by Gauss will not be reported, since it needs the knowledge of complex topics that were not covered during the lectures. Intuitively, Gauss managed to infer the distribution by studying the inference of the mean of an unknown random variable.
+The formal derivation of the normal distribution made by Gauss will not be reported, since it needs the knowledge of complex topics that were not covered during the lectures. Intuitively, Gauss managed to derive the distribution by studying the inference of the mean of an unknown random variable.
 
 In particular, while studying some astronomical phenomena, Gauss calculated a specific random variable for which a certain extimation (specifically, the maximum likelihood estimation) of the mean of that random variable, given some samples of it, coincided with the sample mean. It can be proven that the only random variable with such a property has the following density function:
 
@@ -101,3 +101,49 @@ This density, for $\alpha = \frac{1}{\sigma}$, is exactly the normal density fun
 
 ## Central limit theorem
 
+The final derivation of the normal probability distribution is the so called **central limit theorem**, that is also one of the most important results of statistics and of probability theory. The theorem states that given any sequence of $n$ independent random variables, their sum will converge to a normal random variable for $n$ large enough.
+
+The theorem was first proved by Laplace, that understood the potential of the normal distribution and published many studies about it. However, this first proof was not very rigorous, and worked only under some strong assumptions. 
+
+A better enunciation (and proof) of the theorem was given by **Lindeberg** and **Levy**, that however still assumed that the sequence of random variables was composed by not only independent, but also identically distributed random variables. Finally, the russian mathematician **Aleksandr Lyapunov** gave an enunciation and a proof of the theorem only assuming a sequence of independent random variables.
+
+We want now to enunciate the classical form of the central limit theorem.
+
+#### Classical CLT (Lindeberg–Levy)
+
+Let's take a sequence of i.i.d. random variables $X_1, \cdots, X_n$, with $\mathbb{E}(X_i) = \mu$ and $\operatorname{Var}(X_i) = \sigma$. Let now $\bar{X} = \dfrac{X_1, \cdots, X_n}{n}$ be the sample mean of the sequence. Then, as $n$ approachs to infinity, we will have that:
+
+$${\sqrt{n}}({\bar {X}}_{n}-\mu ) \to \mathcal {N}\left(0,\sigma ^{2}\right)$$
+
+Meaning that the random variable so defined converges in distribution to a normal random variable with variance $\sigma^2$ and mean $0$.
+
+**References** \
+[1][http://www.science.unitn.it/probab/Mathmodels/lecture-gaussiana.pdf](http://www.science.unitn.it/probab/Mathmodels/lecture-gaussiana.pdf) \
+[2][https://en.wikipedia.org/wiki/De_Moivre%E2%80%93Laplace_theorem](https://en.wikipedia.org/wiki/De_Moivre%E2%80%93Laplace_theorem) \
+[3][https://en.wikipedia.org/wiki/De_Moivre%E2%80%93Laplace_theorem](https://en.wikipedia.org/wiki/De_Moivre%E2%80%93Laplace_theorem) \
+[4][https://en.wikipedia.org/wiki/Central_limit_theorem](https://en.wikipedia.org/wiki/Central_limit_theorem)
+
+# Research 18 - generation of a normal random variable
+
+The Box-Muller transform is a way to generate two independent normal random variables $X$ and $Y$, using two independent random variables $U_1$ and $U_2$ uniform over (0,1). The way $X$ and $Y$ are computed is the following:
+
+$${X=R\cos(\Theta )={\sqrt {-2\ln U_{1}}}\cos(2\pi U_{2})}$$
+
+$${Y=R\sin(\Theta )={\sqrt {-2\ln U_{1}}}\sin(2\pi U_{2})}$$
+
+
+
+Another method that can be used to generate a pair of independent normal random variables is the so called **Marsaglia polar method**. This method uses the same theoretical basis of the Box-Muller method, of which it represents the polar form.
+
+This method uses again two uniform random variables $U_1$ and $U_2$ to generate two normal random variables $X$ and $Y$. Each time we want to sample a couple $(x,y)$ from the couple of normal random variables $(X,Y)$, we sample two values $(u,v)$ respectively from $U_1$ and $U_2$ such that:
+
+$$0 < s = u + v < 1$$
+
+We will then have:
+
+$$x = \sqrt{-2 \ln s} \left(\frac{u}{\sqrt{s}}\right) = u \cdot \sqrt{\frac{-2 \ln s}{s}}$$
+
+$$y = \sqrt{-2 \ln s}\left( \frac{v}{\sqrt{s}}\right) = v \cdot \sqrt{\frac{-2 \ln s}{s}}$$
+
+**References** \
+[1] [https://it.wikipedia.org/wiki/Trasformazione_di_Box-Muller](https://it.wikipedia.org/wiki/Trasformazione_di_Box-Muller)
