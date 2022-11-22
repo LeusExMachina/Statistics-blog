@@ -49,9 +49,19 @@ We can now rewrite the entire expression applying first a logarithm and then an 
 $${\displaystyle {\begin{aligned}{n \choose k}p^{k}q^{n-k}&\simeq {\frac {1}{\sqrt {2\pi npq}}}\exp \left\{\ln \left(\left({\frac {np}{k}}\right)^{k}\right)+\ln \left(\left({\frac {nq}{n-k}}\right)^{n-k}\right)\right\}\\&={\frac {1}{\sqrt {2\pi npq}}}\exp \left\{-k\ln \left({\frac {k}{np}}\right)+(k-n)\ln \left({\frac {n-k}{nq}}\right)\right\}\\\end{aligned}}}$$
 {% endraw %}
 
-Where we just used the properties of the logarithms. Now, let's consider $x=\dfrac{k-np}{{\sqrt{npq}}}$. Then, ${k=np+x{\sqrt {npq}}}$.
+Where we just used the properties of the logarithms. Now, let's consider
 
-Thus:
+{% raw %}
+$$x = \dfrac{(k-np)}{\sqrt{npq}}$$
+{% endraw %}
+
+Then,
+
+{% raw %}
+$${k=np+x{\sqrt {npq}}}$$
+{% endraw %}
+
+Thus we obtain:
 
 {% raw %}
 $${\begin{aligned}{n \choose k}p^{k}q^{n-k}&\simeq {\frac {1}{\sqrt {2\pi npq}}}\exp \left\{-k\ln \left({\frac {np+x{\sqrt {npq}}}{np}}\right)+(k-n)\ln \left({\frac {n-np-x{\sqrt {npq}}}{nq}}\right)\right\}\\&={\frac {1}{\sqrt {2\pi npq}}}\exp \left\{-k\ln \left({1+x{\sqrt {\frac {q}{np}}}}\right)+(k-n)\ln \left({1-x{\sqrt {\frac {p}{nq}}}}\right)\right\}\qquad p+q=1\\\end{aligned}}$$
