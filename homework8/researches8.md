@@ -33,32 +33,46 @@ $$n! \simeq  n^n e^{-n}\sqrt{2 \pi n}\qquad \text{as } n \to \infty$$
 
 Using this result, we can re-write the Binomial distribution as:
 
+{% raw %}
 $${\begin{aligned}{n \choose k}p^{k}q^{{n-k}}&={\frac{n!}{k!(n-k)!}}p^{k}q^{{n-k}} \simeq {\frac{n^{n}e^{{-n}}{\sqrt{2\pi n}}}{k^{k}e^{{-k}}{\sqrt{2\pi k}}(n-k)^{{n-k}}e^{{-(n-k)}}{\sqrt  {2\pi (n-k)}}}}p^{k}q^{{n-k}}\\&={\sqrt  {{\frac  {n}{2\pi k\left(n-k\right)}}}}{\frac{n^{n}}{k^{k}\left(n-k\right)^{{n-k}}}}p^{k}q^{{n-k}}\\&={\sqrt{{\frac{n}{2\pi k\left(n-k\right)}}}}\left({\frac  {np}{k}}\right)^{k}\left({\frac  {nq}{n-k}}\right)^{{n-k}}\end{aligned}}$$
+{% endraw %}
 
 Now, since we assumed $k$ close to $np$, we can approximate ${\tfrac{k}{n}}\to p$ and write:
 
+{% raw %}
 $${\begin{aligned}{n \choose k}p^{k}q^{{n-k}}&\simeq {\sqrt  {{\frac  {1}{2\pi n{\frac  {k}{n}}\left(1-{\frac  {k}{n}}\right)}}}}\left({\frac  {np}{k}}\right)^{{k}}\left({\frac  {nq}{n-k}}\right)^{{n-k}}\\&\simeq {\frac  {1}{{\sqrt  {2\pi npq}}}}\left({\frac  {np}{k}}\right)^{{k}}\left({\frac  {nq}{n-k}}\right)^{{n-k}}\qquad p+q=1\\\end{aligned}}$$
+{% endraw %}
 
 We can now rewrite the entire expression applying first a logarithm and then an exponential, thus obtaining:
 
+{% raw %}
 $${\displaystyle {\begin{aligned}{n \choose k}p^{k}q^{n-k}&\simeq {\frac {1}{\sqrt {2\pi npq}}}\exp \left\{\ln \left(\left({\frac {np}{k}}\right)^{k}\right)+\ln \left(\left({\frac {nq}{n-k}}\right)^{n-k}\right)\right\}\\&={\frac {1}{\sqrt {2\pi npq}}}\exp \left\{-k\ln \left({\frac {k}{np}}\right)+(k-n)\ln \left({\frac {n-k}{nq}}\right)\right\}\\\end{aligned}}}$$
+{% endraw %}
 
 Where we just used the properties of the logarithms. Now, let's consider $x={\frac {(k-np)}{{\sqrt  {npq}}}}$. Then, ${k=np+x{\sqrt {npq}}}$.
 
 Thus:
 
+{% raw %}
 $${\begin{aligned}{n \choose k}p^{k}q^{n-k}&\simeq {\frac {1}{\sqrt {2\pi npq}}}\exp \left\{-k\ln \left({\frac {np+x{\sqrt {npq}}}{np}}\right)+(k-n)\ln \left({\frac {n-np-x{\sqrt {npq}}}{nq}}\right)\right\}\\&={\frac {1}{\sqrt {2\pi npq}}}\exp \left\{-k\ln \left({1+x{\sqrt {\frac {q}{np}}}}\right)+(k-n)\ln \left({1-x{\sqrt {\frac {p}{nq}}}}\right)\right\}\qquad p+q=1\\\end{aligned}}$$
+{% endraw %}
 
 Now we can apply the taylor approximation, for which:
 
+{% raw %}
 $${\ln \left(1+x\right)\simeq x-{\frac {x^{2}}{2}}+{\frac {x^{3}}{3}}-\cdots }$$
+{% endraw %}
 
 Obtaining:
 
+{% raw %}
 $${\displaystyle {\begin{aligned}{n \choose k}p^{k}q^{n-k}&\simeq {\frac {1}{\sqrt {2\pi npq}}}\exp \left\{-k\left({x{\sqrt {\frac {q}{np}}}}-{\frac {x^{2}q}{2np}}+\cdots \right)+(k-n)\left({-x{\sqrt {\frac {p}{nq}}}-{\frac {x^{2}p}{2nq}}}-\cdots \right)\right\}\\&={\frac {1}{\sqrt {2\pi npq}}}\exp \left\{\left(-np-x{\sqrt {npq}}\right)\left({x{\sqrt {\frac {q}{np}}}}-{\frac {x^{2}q}{2np}}+\cdots \right)+\left(np+x{\sqrt {npq}}-n\right)\left(-x{\sqrt {\frac {p}{nq}}}-{\frac {x^{2}p}{2nq}}-\cdots \right)\right\}\\&={\frac {1}{\sqrt {2\pi npq}}}\exp \left\{\left(-np-x{\sqrt {npq}}\right)\left(x{\sqrt {\frac {q}{np}}}-{\frac {x^{2}q}{2np}}+\cdots \right)-\left(nq-x{\sqrt {npq}}\right)\left(-x{\sqrt {\frac {p}{nq}}}-{\frac {x^{2}p}{2nq}}-\cdots \right)\right\}\\&={\frac {1}{\sqrt {2\pi npq}}}\exp \left\{\left(-x{\sqrt {npq}}+{\frac {1}{2}}x^{2}q-x^{2}q+\cdots \right)+\left(x{\sqrt {npq}}+{\frac {1}{2}}x^{2}p-x^{2}p-\cdots \right)\right\}\\&={\frac {1}{\sqrt {2\pi npq}}}\exp \left\{-{\frac {1}{2}}x^{2}q-{\frac {1}{2}}x^{2}p-\cdots \right\}\\&={\frac {1}{\sqrt {2\pi npq}}}\exp \left\{-{\frac {1}{2}}x^{2}(p+q)-\cdots \right\}\\&\simeq {\frac {1}{\sqrt {2\pi npq}}}\exp \left\{-{\frac {1}{2}}x^{2}\right\}\\&={\frac {1}{\sqrt {2\pi npq}}}e^{\frac {-(k-np)^{2}}{2npq}}\\\end{aligned}}}$$
+{% endraw %}
 
 We then finally obtain the approximation:
 
+{% raw %}
 $${n \choose k}p^{k}q^{n-k} \simeq {\frac {1}{\sqrt {2\pi npq}}}e^{\frac {-(k-np)^{2}}{2npq}}$$
+{% endraw %}
 
 ## Gauss derivation
