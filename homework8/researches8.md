@@ -15,7 +15,7 @@ The normal distribution has been introduced by french mathematician Abraham De M
 
 Later, however, the german mathematician Karl F. Gauss derived and used again this distribution in his work regarding some astronomical observations. Again, the distribution was found as a "collateral effect" of another work and could have passed unnoticed again if the french mathematician Pierre S. Laplace didn't noticed it.
 
-Laplace published a series of studies proving various interesting properties of the normal distribution and providing a first, non-rigorous proof of the **central limit theorem**. This theorem was latter formalized and proved himself to be one of the most important results in statistics.
+Laplace published a series of studies proving various interesting properties of the normal distribution and providing a first, non-rigorous proof of the **central limit theorem**. This theorem was later formalized and proved himself to be one of the most important results in statistics.
 
 Let's now take a look to the derivations mentioned above.
 
@@ -111,7 +111,7 @@ We want now to enunciate the classical form of the central limit theorem.
 
 #### Classical CLT (Lindeberg–Levy)
 
-Let's take a sequence of i.i.d. random variables $X_1, \cdots, X_n$, with $\mathbb{E}(X_i) = \mu$ and $\operatorname{Var}(X_i) = \sigma$. Let now $\bar{X} = \dfrac{X_1, \cdots, X_n}{n}$ be the sample mean of the sequence. Then, as $n$ approachs to infinity, we will have that:
+Let's take a sequence of i.i.d. random variables $X_1, \cdots, X_n$, with $\mathbb{E}(X_i) = \mu$ and $\operatorname{Var}(X_i) = \sigma$. Let now $\bar{X} = \dfrac{X_1, \cdots, X_n}{n}$ be the sample mean of the sequence. Then, as $n$ approaches to infinity, we will have that:
 
 $${\sqrt{n}}({\bar {X}}_{n}-\mu ) \to \mathcal {N}\left(0,\sigma ^{2}\right)$$
 
@@ -135,7 +135,7 @@ $${X=R\cos(\Theta )={\sqrt {-2\ln U_{1}}}\cos(2\pi U_{2})}$$
 
 $${Y=R\sin(\Theta )={\sqrt {-2\ln U_{1}}}\sin(2\pi U_{2})}$$
 
-Both $X$ and $Y$ are computed considering $U_1$ as a radius and $U_2$ as an angle, and operating a transformation from polar to linear coordinates. Notice how multiplying $U_2$ by $2\pi$ is necessary to generate values between $0$ and $2\pi$, while applying the logarithm to $U_1$ guarantees bot the generation of values between $0$ and $+\infty$, so that the computed pair $(X,Y)$ can be any point on the cartesian plane.
+Both $X$ and $Y$ are computed considering $U_1$ as a radius and $U_2$ as an angle, and operating a transformation from polar to linear coordinates. Notice how multiplying $U_2$ by $2\pi$ is necessary to generate values between $0$ and $2\pi$, while applying the logarithm to $U_1$ guarantees both the generation of values between $0$ and $+\infty$, so that the computed pair $(X,Y)$ can be any point on the cartesian plane.
 
 Notice also that the generated variables follow a normal distribution with mean $0$ and variance $1$. By the way, it's easy to modify the transform to generate a pair normal distributions with chosen mean and variance:
 
