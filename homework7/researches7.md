@@ -216,19 +216,11 @@ In fact, since $x$ is monotonous and growing from $a > 0$ to $+\infty$, replacin
 
 $${\operatorname {E} (X) \geq \int _{a}^{+\infty }af(x)\,dx = a\int _{a}^{+\infty }f(x)\,dx}$$
 
-But then the proof easily follows: in fact, the cumulative distribution function associated to $X$, defined as $\operatorname {F} (x) = \operatorname {P} (X < x)$, can be computed as:
+But then the proof easily follows. In fact:
 
-$${\operatorname {F} (x) = \int _{-\infty}^{x}f(t)\,dt}$$
+$${\operatorname {F} (x) = \int _{a}^{+\infty}f(t)\,dt} = \operatorname{P}(X \geq a)$$
 
-If $X$ is non-negative:
-
-$${\operatorname {F} (x) = \int _{0}^{x}f(t)\,dt}$$
-
-But then:
-
-$${\int _{a}^{+\infty }f(x)\,dx = 1 - \int _{0}^{a}f(x)\,dx = 1 - \operatorname {F} (a) = 1 - \operatorname {P} (X < a) = \operatorname {P} (X \geq a)}$$
-
-Hence we obtain:
+But then we have:
 
 $${\operatorname {E} (X) \geq a\operatorname {P} (X \geq a)}$$
 
